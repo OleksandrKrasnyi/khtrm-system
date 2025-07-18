@@ -36,19 +36,19 @@ class Settings(BaseSettings):
         default=30, description="Access token expiration time in minutes"
     )
 
-    # Database settings
+    # Database settings - MySQL only
     database_url: str = Field(
-        default="sqlite:///./khtrm_system.db",
-        description="Database connection URL",
+        default="",
+        description="MySQL database connection URL",
     )
     database_echo: bool = Field(default=False, description="Echo SQL queries")
 
-    # MySQL specific settings (when using MySQL)
-    mysql_host: str | None = Field(default=None, description="MySQL host")
-    mysql_port: int | None = Field(default=3306, description="MySQL port")
-    mysql_user: str | None = Field(default=None, description="MySQL username")
-    mysql_password: str | None = Field(default=None, description="MySQL password")
-    mysql_database: str | None = Field(default=None, description="MySQL database name")
+    # MySQL specific settings
+    mysql_host: str = Field(default="localhost", description="MySQL host")
+    mysql_port: int = Field(default=3306, description="MySQL port")
+    mysql_user: str = Field(default="", description="MySQL username")
+    mysql_password: str = Field(default="", description="MySQL password")
+    mysql_database: str = Field(default="", description="MySQL database name")
 
     # CORS settings
     cors_origins: list[str] = Field(
@@ -86,20 +86,19 @@ class Settings(BaseSettings):
     @property
     def mysql_url(self) -> str:
         """Generate MySQL connection URL."""
-        if all(
-            [self.mysql_host, self.mysql_user, self.mysql_password, self.mysql_database]
-        ):
-            return (
-                f"mysql+pymysql://{self.mysql_user}:{self.mysql_password}"
-                f"@{self.mysql_host}:{self.mysql_port}/{self.mysql_database}"
-                f"?charset=utf8mb4"
-            )
-        return self.database_url
+        return (
+            f"mysql+pymysql://{self.mysql_user}:{self.mysql_password}"
+            f"@{self.mysql_host}:{self.mysql_port}/{self.mysql_database}"
+            f"?charset=utf8"
+        )
 
     @property
     def effective_database_url(self) -> str:
-        """Get effective database URL (MySQL if configured, otherwise SQLite)."""
-        return self.mysql_url if self.mysql_host else self.database_url
+        """Get effective database URL - MySQL only."""
+        # Check if DATABASE_URL from env is set, otherwise use MySQL URL
+        if self.database_url and not self.database_url.startswith("sqlite"):
+            return self.database_url
+        return self.mysql_url
 
 
 @lru_cache

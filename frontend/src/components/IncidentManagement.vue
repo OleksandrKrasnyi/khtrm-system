@@ -1,6 +1,6 @@
 <template>
   <div class="incident-management">
-    <h1><i class="fas fa-exclamation-circle"></i> Управління інцидентами</h1>
+    <h1><i class="fas fa-exclamation-circle" /> Управління інцидентами</h1>
     <p>Тут буде реєстрація та управління інцидентами</p>
   </div>
 </template>

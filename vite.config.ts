@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import { resolve } from "path";
+import { fileURLToPath, URL } from "node:url";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,7 +8,7 @@ export default defineConfig({
 
   resolve: {
     alias: {
-      "@": resolve(__dirname, "frontend/src"),
+      "@": fileURLToPath(new URL("./frontend/src", import.meta.url)),
     },
   },
 
@@ -41,6 +41,6 @@ export default defineConfig({
   },
 
   define: {
-    __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
+    __APP_VERSION__: JSON.stringify(process.env.npm_package_version || "1.0.0"),
   },
 });

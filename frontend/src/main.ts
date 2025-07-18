@@ -1,18 +1,38 @@
 import { createApp } from "vue";
-import { createRouter, createWebHistory } from "vue-router";
+import {
+  createRouter,
+  createWebHistory,
+  type RouteRecordRaw,
+} from "vue-router";
 import { createPinia } from "pinia";
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
 
 import App from "./App.vue";
 import "./style.css";
+import type { Permission } from "@/types";
+
+// Типы для meta информации маршрутов
+interface CustomRouteMeta {
+  requiresAuth?: boolean;
+  requiresGuest?: boolean;
+  requiresPermission?: Permission;
+}
+
+// Расширяем RouteRecordRaw для добавления типизации meta
+declare module "vue-router" {
+  interface RouteMeta extends CustomRouteMeta {}
+}
 
 // Create router
-const routes = [
+const routes: RouteRecordRaw[] = [
   {
     path: "/",
     name: "home",
-    redirect: "/dashboard",
+    redirect: () => {
+      // Will be handled by navigation guard
+      return "/dashboard";
+    },
   },
   {
     path: "/login",
@@ -102,8 +122,8 @@ const router = createRouter({
 // Navigation guards
 router.beforeEach(async (to, from, next) => {
   // Import auth composable dynamically to avoid circular dependency
-  const { useAuth } = await import("./composables/useAuth.js");
-  const { isAuthenticated, user, checkPermission } = useAuth();
+  const { useAuth } = await import("./composables/useAuth");
+  const { isAuthenticated, checkPermission } = useAuth();
 
   // Check if route requires authentication
   if (to.meta.requiresAuth && !isAuthenticated.value) {
@@ -160,7 +180,7 @@ app.config.errorHandler = (error, instance, errorInfo) => {
   console.error("Error info:", errorInfo);
 
   // Show user-friendly error message
-  import("./composables/useNotifications.js").then(({ useNotifications }) => {
+  import("./composables/useNotifications").then(({ useNotifications }) => {
     const { showError } = useNotifications();
     showError("Виникла несподівана помилка. Спробуйте пізніше.");
   });
@@ -171,5 +191,3 @@ app.config.globalProperties.$appVersion = "1.0.0";
 
 // Mount app
 app.mount("#app");
-
-console.log("✅ KHTRM System Vue 3 додаток запущено успішно");

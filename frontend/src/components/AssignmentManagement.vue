@@ -1,6 +1,6 @@
 <template>
   <div class="assignment-management">
-    <h1><i class="fas fa-tasks"></i> Управління завданнями</h1>
+    <h1><i class="fas fa-tasks" /> Управління завданнями</h1>
     <p>Тут буде створення та управління завданнями</p>
   </div>
 </template>

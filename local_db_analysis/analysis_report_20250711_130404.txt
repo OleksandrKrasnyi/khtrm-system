@@ -1,0 +1,131 @@
+=== ЛОКАЛЬНЫЙ АНАЛИЗ УДАЛЕННОЙ БАЗЫ ДАННЫХ ===
+Дата анализа: 11.07.2025 13:04:04
+Сервер: 91.222.248.216:61315
+База данных: saltdepoavt_
+
+=== ОБЩАЯ ИНФОРМАЦИЯ ===
+Всего таблиц в БД: 44
+Записей в zanaradka: 182494
+
+=== СТРУКТУРА ТАБЛИЦЫ ZANARADKA ===
+marshrut: smallint(6)
+vipusk: tinyint(4)
+smena: varchar(6)
+tabvoditelZ: int(11)
+tabvoditel: int(11)
+fiovoditel: varchar(50)
+tabinstr: int(11)
+fioinstr: varchar(50)
+tabconduktorZ: int(11)
+tabconduktor: int(11)
+fioconduktor: varchar(50)
+sost: tinyint(4)
+pe№: int(6)
+tvih: char(5)
+tvihmarsrut: char(5)
+kpvih: varchar(10)
+tzah: char(5)
+tend: char(5)
+kpzah: varchar(10)
+tob1: varchar(5)
+tob2: varchar(5)
+putlist№: varchar(50)
+den_nedeli: varchar(15)
+data_day: date
+priznak: varchar(3)
+tipvipusk: varchar(6)
+mestootst: varchar(10)
+tna4otst: varchar(5)
+tkonotst: varchar(5)
+data_file: varchar(20)
+size_file: varchar(11)
+print: tinyint(4)
+tPodgotovkaVod: varchar(5)
+tPodgotovkaKon: varchar(5)
+tSda4aVod: varchar(5)
+tSda4aKon: varchar(5)
+tVihdepoVod: varchar(5)
+tVihdepoKon: varchar(5)
+tZahdepoVod: varchar(5)
+tZahdepoKon: varchar(5)
+Soobhenie: varchar(255)
+key: int(11)
+del: tinyint(4)
+zaprv: int(11)
+zaprFakt: int(11)
+ZaprAdr: varchar(30)
+fl1: int(11)
+
+=== АНАЛИЗ ПОЛЕЙ MS ACCESS ===
+marshrut: 2065 записей из 2065
+vipusk: 2065 записей из 2065
+smena: 2065 записей из 2065
+tabvoditelZ: 2065 записей из 2065
+tabvoditel: 2065 записей из 2065
+fiovoditel: 1049 записей из 2065
+tabinstr: 2065 записей из 2065
+fioinstr: 6 записей из 2065
+tabconduktorZ: 2065 записей из 2065
+tabconduktor: 2035 записей из 2065
+fioconduktor: 0 записей из 2065
+sost: 2065 записей из 2065
+pe№: 2065 записей из 2065
+tvih: 2065 записей из 2065
+tvihmarsrut: 2060 записей из 2065
+kpvih: 2065 записей из 2065
+tzah: 2065 записей из 2065
+tend: 2060 записей из 2065
+kpzah: 2065 записей из 2065
+tob1: 2051 записей из 2065
+tob2: 1942 записей из 2065
+putlist№: 2065 записей из 2065
+den_nedeli: 2065 записей из 2065
+data_day: 2065 записей из 2065
+priznak: 0 записей из 2065
+tipvipusk: 2065 записей из 2065
+mestootst: 156 записей из 2065
+tna4otst: 156 записей из 2065
+tkonotst: 156 записей из 2065
+data_file: 2065 записей из 2065
+size_file: 795 записей из 2065
+print: 2065 записей из 2065
+tPodgotovkaVod: 2060 записей из 2065
+tPodgotovkaKon: 1270 записей из 2065
+tSda4aVod: 2060 записей из 2065
+tSda4aKon: 1270 записей из 2065
+tVihdepoVod: 2065 записей из 2065
+tVihdepoKon: 1276 записей из 2065
+tZahdepoVod: 2065 записей из 2065
+tZahdepoKon: 1276 записей из 2065
+Soobhenie: 6 записей из 2065
+del: 2065 записей из 2065
+zaprv: 2064 записей из 2065
+zaprFakt: 2065 записей из 2065
+ZaprAdr: 2065 записей из 2065
+fl1: 2065 записей из 2065
+
+=== КАРТА ПОЛЕЙ ===
+key -> id (Уникальный ID записи)
+data_day -> assignment_date (Дата наряда)
+marshrut -> route_number (Номер маршрута)
+vipusk -> brigade (Бригада/Выпуск)
+smena -> shift (Смена)
+tabvoditel -> driver_tab_number (Табельный номер водителя)
+fiovoditel -> driver_name (ФИО водителя)
+tabconduktor -> conductor_tab_number (Табельный номер кондуктора)
+fioconduktor -> conductor_name (ФИО кондуктора)
+pe№ -> vehicle_number (Номер подвижного состава)
+putlist№ -> waybill_number (Номер путевого листа)
+tvih -> departure_time (Время выхода)
+tzah -> arrival_time (Время захода)
+ZaprAdr -> fuel_address (Адрес заправки)
+kpvih -> route_endpoint (Конечная остановка)
+tipvipusk -> route_type (Тип выпуска)
+
+=== РЕКОМЕНДАЦИИ ===
+1. ✅ Поля БД уже исправлены (pe№, putlist№)
+2. ✅ Simple View уже улучшен
+3. 📝 Рассмотрите добавление всех найденных полей в Full View
+4. 🔧 Проверьте кодировку украинских символов
+5. 📊 Добавьте статистику по данным в интерфейс
+6. 🗂️ Рассмотрите группировку полей по категориям

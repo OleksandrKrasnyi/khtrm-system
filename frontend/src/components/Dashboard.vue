@@ -1,8 +1,15 @@
 <template>
   <div class="dashboard">
-    <div class="welcome-section">
+    <!-- Для админа показываем новую панель управления -->
+    <AdminDashboard v-if="isAdmin" />
+
+    <!-- Для нарядчика показываем таблицу нарядов -->
+    <AssignmentTable v-else-if="isDispatcher" />
+
+    <!-- Для остальных ролей показываем приветствие -->
+    <div v-else class="welcome-section">
       <div class="welcome-icon">
-        <i class="fas fa-user-circle"></i>
+        <i class="fas fa-user-circle" />
       </div>
       <h1>Привіт, {{ userRole?.display_name_uk }}!</h1>
       <p class="welcome-subtitle">Ласкаво просимо до системи KHTRM</p>
@@ -14,18 +21,47 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { computed, defineAsyncComponent } from "vue";
 import { useAuth } from "../composables/useAuth";
 
+// Use defineAsyncComponent for better performance
+const AssignmentTable = defineAsyncComponent(
+  () => import("./AssignmentTable.vue"),
+);
+const AdminDashboard = defineAsyncComponent(
+  () => import("./AdminDashboard.vue"),
+);
+
 const { user, userRole } = useAuth();
+
+// Check if current user is an admin
+const isAdmin = computed(() => {
+  return userRole.value?.name === "super_admin";
+});
+
+// Check if current user is a dispatcher
+const isDispatcher = computed(() => {
+  return userRole.value?.name === "dispatcher";
+});
 </script>
 
 <style scoped>
 .dashboard {
+  padding: 1rem;
+  min-height: 50vh;
+}
+
+/* For dispatcher table - full width */
+.dashboard:has(> .assignment-table) {
+  padding: 0;
+}
+
+/* For welcome section - centered */
+.dashboard:has(> .welcome-section) {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 50vh;
   padding: 2rem;
 }
 

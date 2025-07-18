@@ -1,6 +1,6 @@
 <template>
   <div class="vehicle-management">
-    <h1><i class="fas fa-truck"></i> Управління транспортом</h1>
+    <h1><i class="fas fa-bus" /> Управління транспортом</h1>
     <p>Тут буде управління парком транспортних засобів</p>
   </div>
 </template>

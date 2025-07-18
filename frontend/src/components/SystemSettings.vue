@@ -1,6 +1,6 @@
 <template>
   <div class="system-settings">
-    <h1><i class="fas fa-cogs"></i> Налаштування системи</h1>
+    <h1><i class="fas fa-cogs" /> Налаштування системи</h1>
     <p>Тут будуть налаштування та конфігурація системи</p>
   </div>
 </template>

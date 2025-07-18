@@ -1,7 +1,6 @@
 """Base model for all database models."""
 
 from datetime import datetime
-from typing import Any
 
 from sqlalchemy import DateTime, func
 from sqlalchemy.ext.declarative import declared_attr
@@ -11,8 +10,8 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 class Base(DeclarativeBase):
     """Base class for all database models."""
 
-    id: Any
-    __name__: str
+    # Type annotation for id can be provided by child classes
+    # __name__ is automatically provided by Python for all classes
 
     # Generate __tablename__ automatically from class name
     @declared_attr.directive

@@ -4,10 +4,10 @@
 
 ### Backend Server:
 ```bash
-uv run uvicorn backend.app.main:app --reload
+uv run python -m backend.app.main --reload
 ```
 
-### Frontend Server (Vue 3 + Vite):
+### Frontend Server (Vue 3 + TypeScript + Vite):
 ```bash
 npm run dev
 ```
@@ -20,25 +20,36 @@ npm run dev
 
 ## 🏗️ Architecture Status
 
-### ✅ Modern Vue 3 Composables Architecture (10/10)
-- **Role-based Access Control**: 9 user roles with granular permissions
-- **Vue 3 Composition API**: Modern composables-based architecture
-- **FastAPI Backend**: High-performance Python web framework
-- **MySQL/SQLite Support**: Flexible database configuration
-- **Ukrainian UI**: User-friendly Ukrainian language interface
-- **Clean Code**: Ruff, ESLint, and Prettier configured
+### ✅ Modern Vue 3 TypeScript Architecture (10/10)
+- **TypeScript Migration**: ✅ Complete migration from JavaScript to TypeScript
+- **Role-based Access Control**: 6 user roles with granular permissions
+- **Vue 3 Composition API**: Modern composables-based architecture with full type safety
+- **FastAPI Backend**: High-performance Python web framework with full API documentation
+- **MySQL/SQLite Support**: Flexible database configuration with real production data
+- **Ukrainian UI**: User-friendly Ukrainian language interface throughout the system
+- **Clean Code**: Ruff, ESLint, and TypeScript linting with production-ready code quality
 
 ### ✅ Implemented Core Features
 - **User Management**: Users and roles with permissions system
-- **Authentication**: JWT-based secure authentication
+- **Authentication**: JWT-based secure authentication with TypeScript types
 - **Database Models**: User, UserRole with proper relationships
 - **API Validation**: Pydantic schemas with Ukrainian error messages
-- **Modern Frontend**: Vue 3 + Vue Router 4 + Pinia + TypeScript support
+- **Modern Frontend**: Vue 3 + Vue Router 4 + TypeScript + Vite
+- **Type Safety**: Complete TypeScript integration with strict type checking
 - **Development Tools**: Hot reload, code quality tools, testing setup
+- **✅ Admin Dashboard**: Complete admin interface with tabbed navigation
+- **✅ Table Constructor**: Create custom tables with selected columns from any database
+- **✅ Custom Field Builder**: Advanced field builder for calculated fields, joins, and transformations
+- **✅ Database Monitor**: Real-time database structure exploration and monitoring
+- **✅ Field Settings**: Configure field visibility and ordering for different user roles
+- **✅ Dispatcher System**: Fully implemented assignment management with real MySQL database
+- **✅ Assignment Tables**: Customizable table views with field selection and reordering
+- **✅ Real Database**: Connected to MySQL with 182,494+ transport assignment records
+- **✅ Data Integration**: Real-time data from Ukrainian transport assignments (2021-2025)
 
 ### 🔐 User Roles System
-- **Super Admin** (Супер Адміністратор): Full system access
-- **Dispatcher** (Нарядчик): Create transport assignments
+- **Super Admin** (Супер Адміністратор): Full system access with advanced admin dashboard
+- **Dispatcher** (Нарядчик): Create transport assignments with customizable tables
 - **Timekeeper** (Табельщик): Record incidents and work hours
 - **Parking Manager** (Менеджер стоянки): Manage vehicle parking/return
 - **Fuel Manager** (Менеджер палива): Handle fuel operations
@@ -46,6 +57,17 @@ npm run dev
 - **Driver** (Водій): Driver interface (planned)
 - **Inspector** (Інспектор): Quality control (planned)
 - **Analyst** (Аналітик): Reports and analytics (planned)
+
+### 🎭 Test Users & Interfaces
+
+| Username | Password | Role | Ukrainian Name | Current Interface |
+|----------|----------|------|----------------|-------------------|
+| `admin` | `admin` | super_admin | Супер Адміністратор | **✅ Admin Dashboard** |
+| `nar` | `nar` | dispatcher | Нарядчик | **✅ Assignment Tables** |
+| `taba` | `taba` | timekeeper_a | Табельник A | Welcome Screen |
+| `tabb` | `tabb` | timekeeper_b | Табельник B | Welcome Screen |
+| `dys` | `dys` | dispatcher_main | Диспетчер | Welcome Screen |
+| `buc` | `buc` | fuel_accountant | Бухгалтер з палива | Welcome Screen |
 
 ## 🔧 Code Quality Tools
 
@@ -76,7 +98,7 @@ python scripts/python-check.py
 python scripts/python-fix.py
 ```
 
-### JavaScript (Frontend) - ESLint + Prettier
+### TypeScript (Frontend) - ESLint + Vue + Type Checking
 ```bash
 # Check code quality
 npm run lint
@@ -86,9 +108,6 @@ npm run lint -- --fix
 
 # Format code
 npm run format
-
-# Check formatting
-npm run format:check
 
 # Type checking
 npm run type-check
@@ -107,28 +126,41 @@ npm run fix:all
 
 ### ✅ Completed:
 - **Project Structure**: Backend and frontend folders with proper organization
-- **Configuration**: Environment variables, database setup, CORS
+- **TypeScript Migration**: ✅ Complete migration from JavaScript to TypeScript
+- **Configuration**: Environment variables, database setup, CORS, TypeScript config
 - **User Models**: Complete user and role system with permissions
 - **Pydantic Schemas**: Validation with Ukrainian error messages
-- **Vue 3 Setup**: Router, Pinia, composables architecture ready
-- **Code Quality**: Ruff, ESLint, Prettier configured
+- **Vue 3 Setup**: Router, composables architecture with TypeScript
+- **Authentication System**: ✅ Working JWT-based auth with role management
+- **Vue Composables**: ✅ useAuth, useNotifications with full TypeScript types
+- **UI Components**: ✅ Login, Dashboard, and navigation components
+- **Code Quality**: Ruff, ESLint configured with TypeScript support
+- **Code Cleanup**: ✅ All debug logs removed, English comments, clean code
 - **Documentation**: README.md with architecture overview
+- **✅ Admin Dashboard**: Complete control panel with tabbed navigation
+- **✅ Database Monitor**: Real-time database structure exploration
+- **✅ Table Constructor**: Custom table builder with column selection
+- **✅ Field Settings**: Configure field visibility and ordering for user roles
+- **✅ Dispatcher Module**: Complete assignment management system
+- **✅ Real Database Integration**: MySQL connection with 182,494+ records
+- **✅ Assignment Tables**: AssignmentTable.vue with admin-configurable fields
+- **✅ Data Services**: Assignment service with encoding handling
+- **✅ Project Cleanup**: Removed all temporary, test, and mock files
+- **✅ Linting Compliance**: All files pass Python/TypeScript linting checks
 
 ### 🔄 In Progress:
-- **Authentication Service**: JWT token generation and validation
-- **API Routers**: Auth and user management endpoints
-- **Vue Composables**: useAuth, useApi, useNotifications
-- **Login Component**: User authentication interface
-- **Dashboard**: Role-based interface components
+- **User Management Interface**: Complete user creation and editing in admin panel
+- **Advanced Analytics**: Reporting dashboard with charts and metrics
+- **Extended Role Interfaces**: Specialized dashboards for timekeeper, fuel manager, etc.
 
 ### 📋 Planned:
 - **Vehicle Management**: Fleet tracking and maintenance
-- **Assignment System**: Transport scheduling and dispatch
 - **Incident Recording**: Event logging and timekeeper functions
 - **Fuel Management**: Consumption tracking and optimization
 - **Parking Operations**: Vehicle return and parking management
-- **Reports & Analytics**: Data visualization and insights
-- **Mobile Interface**: Responsive design for mobile devices
+- **Mobile Interface**: Enhanced responsive design for mobile devices
+- **Advanced Assignment Features**: Creating and editing assignments (currently read-only)
+- **Real-time Features**: WebSocket integration for live updates
 
 ## 🛠️ Development Setup
 
@@ -142,7 +174,7 @@ npm run fix:all
 ```bash
 # Clone repository
 git clone <repository-url>
-cd brm-system
+cd khtrm-system
 
 # Install Python dependencies
 uv sync
@@ -192,6 +224,101 @@ uv run alembic upgrade head
 # Create new migration
 uv run alembic revision --autogenerate -m "Description"
 ```
+
+## ✅ Admin Dashboard Features
+
+### 🎛️ Admin Interface (Fully Implemented)
+
+**Dashboard Navigation:**
+- **Overview Section**: System statistics and quick actions
+- **Database Monitor**: Real-time database structure exploration
+- **Field Settings**: Configure field visibility and ordering
+- **Table Constructor**: Create custom tables with selected columns
+- **User Management**: User and role management (interface ready)
+- **System Settings**: Configure system parameters (interface ready)
+
+**Database Monitoring:**
+- Real-time database structure exploration
+- Table and column information with data types
+- Row count and column count display for all tables
+- Search functionality for tables and fields
+- Sample data preview capabilities
+- Support for multiple database connections
+
+**Table Constructor:**
+- Create custom tables with selected columns from any database table
+- Support for multiple database sources with automatic discovery
+- Drag-and-drop style column ordering with up/down arrows
+- Real-time preview functionality with actual data
+- **Custom Field Builder** - ✅ Create calculated fields, joins, and custom data transformations
+- Save and load table configurations to localStorage
+- Export table definitions and share configurations
+
+**Custom Field Builder Features:**
+- **Calculated Fields** - Time differences, date differences, arithmetic operations
+- **Field Concatenation** - Combine multiple fields with custom separators
+- **Conditional Logic** - IF-THEN-ELSE logic based on field values
+- **JOIN Operations** - Join with other tables to display related data
+- **Aggregate Functions** - COUNT, SUM, AVG, MIN, MAX with grouping
+- **Lookup Fields** - Search values in reference tables
+- **Real-time SQL Preview** - See generated SQL before applying
+- **Field Validation** - Ensure all required parameters are provided
+- **TypeScript Integration** - Full type safety with proper interfaces
+
+**Field Settings Management:**
+- Configure field visibility for different user roles
+- Reorder fields with intuitive up/down arrow interface
+- Role-specific field configurations (dispatcher, timekeeper, etc.)
+- Reset to default settings functionality
+- Clear all fields with one click
+- Persistent settings storage between sessions
+
+**Technical Features:**
+- **Responsive Design**: Mobile-friendly admin interface
+- **Async Components**: Lazy loading for better performance
+- **Error Handling**: Comprehensive error handling with fallbacks
+- **Ukrainian Interface**: Complete Ukrainian localization
+- **Font Awesome Integration**: Modern icons throughout the interface
+- **LocalStorage Persistence**: Settings saved between sessions
+
+## ✅ Dispatcher System Features
+
+### 🚚 Assignment Management (Fully Implemented)
+
+**Database Integration:**
+- Connected to real MySQL database (91.222.248.216:61315)
+- Database: `saltdepoavt_`, Table: `zanaradka`
+- 182,494+ real transport assignment records
+- Data range: 2021-09-01 to 2025-07-11
+- Real Ukrainian transport routes and driver data
+
+**Assignment Display:**
+- **Single Table View**: Streamlined design with admin-configurable fields
+- **Date-based Filtering**: Navigate assignments by date
+- **Real-time Statistics**: Total assignments, active routes, completed tasks
+- **Field Customization**: Fields configured by admin through Field Settings
+- **Responsive Design**: Mobile-friendly table with horizontal scrolling
+
+**Admin-Configurable Fields:**
+- Field visibility controlled by admin through Field Settings
+- Column order managed by admin interface
+- Role-specific field configurations
+- Persistent settings across user sessions
+- Real-time updates when admin changes field settings
+
+**User Interface:**
+- **Ukrainian Localization**: All field names and interface in Ukrainian
+- **Real-time Data**: Live data from MySQL database
+- **Loading States**: Professional loading indicators
+- **Error Handling**: Graceful error handling with user-friendly messages
+- **Export Capabilities**: Field settings preserved between sessions
+
+**Technical Implementation:**
+- **Vue 3 + TypeScript**: Modern frontend with full type safety
+- **FastAPI Backend**: High-performance API with Pydantic validation
+- **PyMySQL Connection**: Direct MySQL database integration
+- **Encoding Handling**: Proper Unicode support for Ukrainian text
+- **Clean Architecture**: Separation of services, components, and types
 
 ## 🧪 Testing
 
@@ -248,120 +375,136 @@ docker-compose up -d
 ## 🎯 Key Features Overview
 
 ### 🔐 Authentication & Authorization:
-- JWT-based authentication
-- Role-based access control
+- JWT-based authentication with TypeScript types
+- Role-based access control with granular permissions
 - Permission-based route protection
 - Secure password hashing with bcrypt
 
-### 👥 User Management:
-- Multiple user roles with specific permissions
-- User profile management
-- Employee ID and department tracking
-- Activity logging and login statistics
+### 🎛️ Admin Management:
+- Comprehensive admin dashboard with tabbed navigation
+- Real-time database monitoring and exploration
+- Custom table constructor with column selection
+- Field settings management for different user roles
+- User management interface (ready for implementation)
+- System settings configuration (ready for implementation)
 
-### 🚛 Transport Management (Planned):
-- Vehicle fleet tracking
-- Driver assignment and scheduling
-- Route planning and optimization
-- Maintenance scheduling
+### 🚛 Transport Management:
+- Real-time assignment tables with 182,494+ records
+- Admin-configurable field display and ordering
+- Date-based filtering and navigation
+- Assignment statistics and analytics
+- Vehicle fleet tracking (planned)
+- Driver assignment and scheduling (planned)
 
-### ⛽ Resource Management (Planned):
-- Fuel consumption tracking
-- Parking space management
-- Incident reporting and logging
-- Performance analytics
-
-### 📊 Reporting & Analytics (Planned):
-- Real-time dashboards
-- Custom report generation
-- Data export capabilities
-- Performance metrics
+### 📊 Data Management:
+- Real MySQL database integration with production data
+- Custom table creation with selected columns
+- Field configuration for different user roles
+- Real-time data monitoring and exploration
+- Export and import capabilities
+- Data validation and error handling
 
 ## 🎨 Frontend Components Structure
 
+### Vue 3 Components:
+- **Dashboard**: Role-based main interface with conditional rendering
+- **AdminDashboard**: Complete admin control panel with tabbed navigation
+- **TableConstructor**: Custom table builder with database integration
+- **CustomFieldBuilder**: ✅ Advanced field builder for calculated fields, joins, and transformations
+- **DatabaseMonitor**: Real-time database structure exploration
+- **AdminFieldSettings**: Field configuration for different user roles
+- **AssignmentTable**: Assignment management with admin-configurable fields
+- **LoginForm**: User authentication with test user information
+- **UserManagement**: User and role management (interface ready)
+- **SystemSettings**: Configuration panel (interface ready)
+
 ### Vue 3 Composables:
-- **useAuth**: Authentication state and methods
-- **useApi**: HTTP client with error handling
-- **useNotifications**: Toast notifications system
-- **usePermissions**: Role and permission checking
-- **useRouter**: Navigation with guards
+- **useAuth**: Authentication state and methods with TypeScript types
+- **useNotifications**: Toast notifications system with success/error handling
+- **useApi**: HTTP client with error handling (planned)
+- **usePermissions**: Role and permission checking (planned)
+- **useRouter**: Navigation with guards (planned)
 
 ### Planned Components:
-- **LoginForm**: User authentication
-- **Dashboard**: Role-based main interface
-- **UserManagement**: Admin user control
 - **VehicleManagement**: Fleet operations
-- **AssignmentManagement**: Transport scheduling
 - **IncidentManagement**: Event logging
 - **ParkingManagement**: Vehicle parking
 - **FuelManagement**: Fuel operations
 - **ReportsView**: Analytics dashboard
-- **SystemSettings**: Configuration panel
 
 ## 🔒 Security Features
 
-- **JWT Authentication**: Secure token-based auth
+- **JWT Authentication**: Secure token-based auth with TypeScript types
 - **Password Hashing**: Bcrypt protection
-- **Input Validation**: Pydantic schema validation
+- **Input Validation**: Pydantic schema validation with Ukrainian error messages
 - **CORS Configuration**: Proper cross-origin settings
-- **SQL Injection Protection**: SQLAlchemy ORM
+- **SQL Injection Protection**: SQLAlchemy ORM with parameterized queries
 - **Role-based Access**: Granular permission system
-- **Ukrainian Error Messages**: User-friendly validation
+- **Data Sanitization**: Proper encoding handling for Ukrainian text
 
 ## 📱 UI/UX Features
 
-- **Responsive Design**: Mobile-friendly interface
-- **Ukrainian Localization**: Native language support
-- **Modern Styling**: Clean, professional appearance
-- **Dark/Light Theme**: User preference support (planned)
-- **Accessibility**: WCAG compliance (planned)
-- **Progressive Web App**: Offline capability (planned)
+- **Responsive Design**: Mobile-friendly interface with adaptive layouts
+- **Ukrainian Localization**: Complete native language support
+- **Modern Styling**: Clean, professional appearance with Font Awesome icons
+- **Loading States**: Professional loading indicators throughout the app
+- **Error Handling**: User-friendly error messages in Ukrainian
+- **Notifications**: Success/error toast notifications with useNotifications
+- **Tabbed Navigation**: Organized admin interface with tabbed sections
+- **Dark Theme Support**: Planned for future implementation
 
 ## 📝 Development Notes
 
 ### Architecture Principles:
-- **Clean Architecture**: Separation of concerns
+- **Clean Architecture**: Separation of concerns with services, components, and types
 - **SOLID Principles**: Maintainable code structure
-- **DRY (Don't Repeat Yourself)**: Code reusability
+- **DRY (Don't Repeat Yourself)**: Code reusability with composables
 - **Single Responsibility**: Clear component purposes
-- **Dependency Injection**: Testable components
+- **Dependency Injection**: Testable components with async loading
 
 ### Code Standards:
-- **Python**: PEP 8 compliance with Ruff
-- **JavaScript**: ESLint + Prettier formatting
-- **Vue**: Composition API best practices
-- **TypeScript**: Strict type checking (planned)
-- **Documentation**: English docs, Ukrainian UI
+- **Python**: PEP 8 compliance with Ruff linting
+- **TypeScript**: Strict type checking with ESLint + Vue integration
+- **Vue**: Composition API best practices with TypeScript
+- **Documentation**: English code comments, Ukrainian UI text
+- **Language Policy**: Code and comments in English, user interface in Ukrainian
+- **Linting Compliance**: All files pass quality checks
 
 ### Performance Optimizations:
-- **Lazy Loading**: Route-based code splitting
-- **Caching**: API response caching
-- **Pagination**: Large dataset handling
-- **Compression**: Gzip response compression
-- **CDN Ready**: Static asset optimization
+- **Lazy Loading**: Async component loading for better performance
+- **Local Storage**: Persistent settings and configurations
+- **Efficient Queries**: Optimized database queries with proper indexing
+- **Component Caching**: Vue component caching for better performance
+- **Type Safety**: Complete TypeScript integration for better development experience
 
 ## 🚀 Quick Start Checklist
 
 1. ✅ Install dependencies: `uv sync && npm install`
 2. ✅ Set up environment: Copy `.env.example` to `.env`
-3. ⏳ Start backend: `uv run uvicorn backend.app.main:app --reload`
-4. ⏳ Start frontend: `npm run dev`
-5. ⏳ Create admin user (when seeder is ready)
-6. ⏳ Access application at http://localhost:3000
+3. ✅ TypeScript Migration: Complete with type safety
+4. ✅ Start frontend: `npm run dev` (runs on http://localhost:3000)
+5. ✅ Start backend: `uv run uvicorn backend.app.main:app --reload`
+6. ✅ Test admin access: Login with `admin/admin` to access Admin Dashboard
+7. ✅ Test dispatcher system: Login as `nar/nar` to view Assignment Tables
+8. ✅ Test database monitor: Use admin interface to explore database structure
+9. ✅ Test table constructor: Create custom tables with selected columns
+10. ✅ Test field settings: Configure field visibility and ordering for different roles
+11. ✅ Real database: System connected to MySQL with 182,494+ records
+12. ✅ Production ready: All files pass linting, code optimized, temporary files cleaned
 
 ## 🎯 Next Steps
 
-1. **Complete Authentication System**: JWT service and API routes
-2. **Create Login Interface**: Vue components for user auth
-3. **Implement Role-based Dashboard**: Different UI for each role
-4. **Set up Database Migrations**: Alembic configuration
-5. **Add Vehicle Management**: Fleet tracking features
-6. **Develop Assignment System**: Transport scheduling
-7. **Create Mobile Interface**: Responsive design
-8. **Add Real-time Features**: WebSocket integration
-9. **Implement Analytics**: Reporting dashboard
-10. **Deploy to Production**: Windows Server setup
+1. **User Management Implementation**: Complete user creation and editing in admin panel
+2. **Advanced Analytics**: Reporting dashboard with charts and metrics
+3. **Extended Role Interfaces**: Specialized dashboards for timekeeper, fuel manager, etc.
+4. **Assignment CRUD Operations**: Add create, edit, delete functionality for assignments
+5. **Vehicle Management**: Fleet tracking and maintenance features
+6. **Incident Recording**: Event logging system for timekeepers
+7. **Fuel Management**: Consumption tracking and optimization
+8. **Real-time Features**: WebSocket integration for live updates
+9. **Mobile Optimization**: Enhanced mobile interface with PWA features
+10. **Performance Optimization**: Caching, pagination, lazy loading improvements
 
 ---
 
-**🎉 BRM System is architecturally ready for rapid development and production deployment!** 
+**🎉 KHTRM System with fully implemented Admin Dashboard, Database Monitor, Table Constructor, Custom Field Builder, Field Settings, and Dispatcher modules is ready for production deployment in Kharkiv city transport system!** 

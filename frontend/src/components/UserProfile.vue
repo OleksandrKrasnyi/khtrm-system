@@ -1,7 +1,7 @@
 <template>
   <div class="user-profile">
     <h1>
-      <i class="fas fa-user"></i>
+      <i class="fas fa-user" />
       Профіль користувача
     </h1>
     <p>Тут буде профіль користувача</p>
@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-// Заглушка компонента
+// Component placeholder
 </script>
 
 <style scoped>

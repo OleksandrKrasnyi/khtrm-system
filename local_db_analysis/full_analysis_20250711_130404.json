@@ -1,0 +1,3725 @@
+{
+  "timestamp": "2025-07-11T13:04:04.265932",
+  "database_info": {
+    "host": "91.222.248.216",
+    "database": "saltdepoavt_",
+    "connection_status": "success"
+  },
+  "all_tables": [
+    "assignments",
+    "const",
+    "dvigenietalon",
+    "dvigenievagon",
+    "employees",
+    "grafik",
+    "karkaskarkmd7",
+    "norma_chas",
+    "norma_chas_day",
+    "norma_chas_grafik",
+    "obslavt",
+    "obslpersonal",
+    "obsltab",
+    "prihtopl",
+    "raspisaniersp",
+    "routes",
+    "sprbul",
+    "sprmarshrut",
+    "sprparametr",
+    "sprpe",
+    "sprpersonal",
+    "sprpersonaldata",
+    "sprpersonalprof",
+    "sprprazdn",
+    "sprtabel",
+    "sprtal",
+    "sprtippe",
+    "sprvihodnoy",
+    "spryro",
+    "sprzapravka",
+    "tabel",
+    "tabel_kod_prichina",
+    "tabel_plan",
+    "tabel_plan_norma",
+    "tabel_prichina",
+    "tabel_prostoy",
+    "topl_kf",
+    "topl_ost",
+    "user",
+    "user_roles",
+    "users",
+    "vehicles",
+    "voditelkonduktors36",
+    "zanaradka"
+  ],
+  "zanaradka_analysis": {
+    "structure": {
+      "basic_structure": [
+        {
+          "Field": "marshrut",
+          "Type": "smallint(6)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "vipusk",
+          "Type": "tinyint(4)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "smena",
+          "Type": "varchar(6)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tabvoditelZ",
+          "Type": "int(11)",
+          "Null": "YES",
+          "Key": "",
+          "Default": "0",
+          "Extra": ""
+        },
+        {
+          "Field": "tabvoditel",
+          "Type": "int(11)",
+          "Null": "YES",
+          "Key": "MUL",
+          "Default": "0",
+          "Extra": ""
+        },
+        {
+          "Field": "fiovoditel",
+          "Type": "varchar(50)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tabinstr",
+          "Type": "int(11)",
+          "Null": "YES",
+          "Key": "",
+          "Default": "0",
+          "Extra": ""
+        },
+        {
+          "Field": "fioinstr",
+          "Type": "varchar(50)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tabconduktorZ",
+          "Type": "int(11)",
+          "Null": "YES",
+          "Key": "",
+          "Default": "0",
+          "Extra": ""
+        },
+        {
+          "Field": "tabconduktor",
+          "Type": "int(11)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "fioconduktor",
+          "Type": "varchar(50)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "sost",
+          "Type": "tinyint(4)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "pe№",
+          "Type": "int(6)",
+          "Null": "YES",
+          "Key": "",
+          "Default": "0",
+          "Extra": ""
+        },
+        {
+          "Field": "tvih",
+          "Type": "char(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tvihmarsrut",
+          "Type": "char(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "kpvih",
+          "Type": "varchar(10)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tzah",
+          "Type": "char(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tend",
+          "Type": "char(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "kpzah",
+          "Type": "varchar(10)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tob1",
+          "Type": "varchar(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": "00:00",
+          "Extra": ""
+        },
+        {
+          "Field": "tob2",
+          "Type": "varchar(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": "00:00",
+          "Extra": ""
+        },
+        {
+          "Field": "putlist№",
+          "Type": "varchar(50)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "den_nedeli",
+          "Type": "varchar(15)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "data_day",
+          "Type": "date",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "priznak",
+          "Type": "varchar(3)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tipvipusk",
+          "Type": "varchar(6)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "mestootst",
+          "Type": "varchar(10)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tna4otst",
+          "Type": "varchar(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tkonotst",
+          "Type": "varchar(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "data_file",
+          "Type": "varchar(20)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "size_file",
+          "Type": "varchar(11)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "print",
+          "Type": "tinyint(4)",
+          "Null": "YES",
+          "Key": "",
+          "Default": "0",
+          "Extra": ""
+        },
+        {
+          "Field": "tPodgotovkaVod",
+          "Type": "varchar(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tPodgotovkaKon",
+          "Type": "varchar(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tSda4aVod",
+          "Type": "varchar(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tSda4aKon",
+          "Type": "varchar(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tVihdepoVod",
+          "Type": "varchar(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tVihdepoKon",
+          "Type": "varchar(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tZahdepoVod",
+          "Type": "varchar(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "tZahdepoKon",
+          "Type": "varchar(5)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "Soobhenie",
+          "Type": "varchar(255)",
+          "Null": "YES",
+          "Key": "",
+          "Default": null,
+          "Extra": ""
+        },
+        {
+          "Field": "key",
+          "Type": "int(11)",
+          "Null": "NO",
+          "Key": "PRI",
+          "Default": null,
+          "Extra": "auto_increment"
+        },
+        {
+          "Field": "del",
+          "Type": "tinyint(4)",
+          "Null": "YES",
+          "Key": "",
+          "Default": "0",
+          "Extra": ""
+        },
+        {
+          "Field": "zaprv",
+          "Type": "int(11)",
+          "Null": "YES",
+          "Key": "",
+          "Default": "0",
+          "Extra": ""
+        },
+        {
+          "Field": "zaprFakt",
+          "Type": "int(11)",
+          "Null": "YES",
+          "Key": "",
+          "Default": "0",
+          "Extra": ""
+        },
+        {
+          "Field": "ZaprAdr",
+          "Type": "varchar(30)",
+          "Null": "YES",
+          "Key": "",
+          "Default": "-",
+          "Extra": ""
+        },
+        {
+          "Field": "fl1",
+          "Type": "int(11)",
+          "Null": "YES",
+          "Key": "",
+          "Default": "0",
+          "Extra": ""
+        }
+      ],
+      "detailed_structure": [
+        {
+          "COLUMN_NAME": "marshrut",
+          "DATA_TYPE": "smallint",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "smallint(6)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 1,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 5,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "vipusk",
+          "DATA_TYPE": "tinyint",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "tinyint(4)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 2,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 3,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "smena",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(6)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 3,
+          "CHARACTER_MAXIMUM_LENGTH": 6,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tabvoditelZ",
+          "DATA_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": "0",
+          "COLUMN_TYPE": "int(11)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 4,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 10,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "tabvoditel",
+          "DATA_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": "0",
+          "COLUMN_TYPE": "int(11)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 5,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 10,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "fiovoditel",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(50)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 6,
+          "CHARACTER_MAXIMUM_LENGTH": 50,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tabinstr",
+          "DATA_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": "0",
+          "COLUMN_TYPE": "int(11)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 7,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 10,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "fioinstr",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(50)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 8,
+          "CHARACTER_MAXIMUM_LENGTH": 50,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tabconduktorZ",
+          "DATA_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": "0",
+          "COLUMN_TYPE": "int(11)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 9,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 10,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "tabconduktor",
+          "DATA_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "int(11)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 10,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 10,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "fioconduktor",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(50)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 11,
+          "CHARACTER_MAXIMUM_LENGTH": 50,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "sost",
+          "DATA_TYPE": "tinyint",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "tinyint(4)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 12,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 3,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "pe№",
+          "DATA_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": "0",
+          "COLUMN_TYPE": "int(6)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 13,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 10,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "tvih",
+          "DATA_TYPE": "char",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "char(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 14,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tvihmarsrut",
+          "DATA_TYPE": "char",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "char(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 15,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "kpvih",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(10)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 16,
+          "CHARACTER_MAXIMUM_LENGTH": 10,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tzah",
+          "DATA_TYPE": "char",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "char(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 17,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tend",
+          "DATA_TYPE": "char",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "char(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 18,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "kpzah",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(10)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 19,
+          "CHARACTER_MAXIMUM_LENGTH": 10,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tob1",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": "00:00",
+          "COLUMN_TYPE": "varchar(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 20,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tob2",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": "00:00",
+          "COLUMN_TYPE": "varchar(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 21,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "putlist№",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(50)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 22,
+          "CHARACTER_MAXIMUM_LENGTH": 50,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "den_nedeli",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(15)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 23,
+          "CHARACTER_MAXIMUM_LENGTH": 15,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "data_day",
+          "DATA_TYPE": "date",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "date",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 24,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "priznak",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(3)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 25,
+          "CHARACTER_MAXIMUM_LENGTH": 3,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tipvipusk",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(6)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 26,
+          "CHARACTER_MAXIMUM_LENGTH": 6,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "mestootst",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(10)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 27,
+          "CHARACTER_MAXIMUM_LENGTH": 10,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tna4otst",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 28,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tkonotst",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 29,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "data_file",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(20)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 30,
+          "CHARACTER_MAXIMUM_LENGTH": 20,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "size_file",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(11)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 31,
+          "CHARACTER_MAXIMUM_LENGTH": 11,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "print",
+          "DATA_TYPE": "tinyint",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": "0",
+          "COLUMN_TYPE": "tinyint(4)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 32,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 3,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "tPodgotovkaVod",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 33,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tPodgotovkaKon",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 34,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tSda4aVod",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 35,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tSda4aKon",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 36,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tVihdepoVod",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 37,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tVihdepoKon",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 38,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tZahdepoVod",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 39,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "tZahdepoKon",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(5)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 40,
+          "CHARACTER_MAXIMUM_LENGTH": 5,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "Soobhenie",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "varchar(255)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 41,
+          "CHARACTER_MAXIMUM_LENGTH": 255,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "key",
+          "DATA_TYPE": "int",
+          "IS_NULLABLE": "NO",
+          "COLUMN_DEFAULT": null,
+          "COLUMN_TYPE": "int(11)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 42,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 10,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "del",
+          "DATA_TYPE": "tinyint",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": "0",
+          "COLUMN_TYPE": "tinyint(4)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 43,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 3,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "zaprv",
+          "DATA_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": "0",
+          "COLUMN_TYPE": "int(11)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 44,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 10,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "zaprFakt",
+          "DATA_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": "0",
+          "COLUMN_TYPE": "int(11)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 45,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 10,
+          "NUMERIC_SCALE": 0
+        },
+        {
+          "COLUMN_NAME": "ZaprAdr",
+          "DATA_TYPE": "varchar",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": "-",
+          "COLUMN_TYPE": "varchar(30)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 46,
+          "CHARACTER_MAXIMUM_LENGTH": 30,
+          "NUMERIC_PRECISION": null,
+          "NUMERIC_SCALE": null
+        },
+        {
+          "COLUMN_NAME": "fl1",
+          "DATA_TYPE": "int",
+          "IS_NULLABLE": "YES",
+          "COLUMN_DEFAULT": "0",
+          "COLUMN_TYPE": "int(11)",
+          "COLUMN_COMMENT": "",
+          "ORDINAL_POSITION": 47,
+          "CHARACTER_MAXIMUM_LENGTH": null,
+          "NUMERIC_PRECISION": 10,
+          "NUMERIC_SCALE": 0
+        }
+      ],
+      "indexes": [
+        {
+          "Table": "zanaradka",
+          "Non_unique": 0,
+          "Key_name": "PRIMARY",
+          "Seq_in_index": 1,
+          "Column_name": "key",
+          "Collation": "A",
+          "Cardinality": 175118,
+          "Sub_part": null,
+          "Packed": null,
+          "Null": "",
+          "Index_type": "BTREE",
+          "Comment": "",
+          "Index_comment": ""
+        },
+        {
+          "Table": "zanaradka",
+          "Non_unique": 1,
+          "Key_name": "tpd",
+          "Seq_in_index": 1,
+          "Column_name": "tabvoditel",
+          "Collation": "A",
+          "Cardinality": 1347,
+          "Sub_part": null,
+          "Packed": null,
+          "Null": "YES",
+          "Index_type": "BTREE",
+          "Comment": "",
+          "Index_comment": ""
+        },
+        {
+          "Table": "zanaradka",
+          "Non_unique": 1,
+          "Key_name": "tpd",
+          "Seq_in_index": 2,
+          "Column_name": "pe№",
+          "Collation": "A",
+          "Cardinality": 29186,
+          "Sub_part": null,
+          "Packed": null,
+          "Null": "YES",
+          "Index_type": "BTREE",
+          "Comment": "",
+          "Index_comment": ""
+        },
+        {
+          "Table": "zanaradka",
+          "Non_unique": 1,
+          "Key_name": "tpd",
+          "Seq_in_index": 3,
+          "Column_name": "data_day",
+          "Collation": "A",
+          "Cardinality": 175118,
+          "Sub_part": null,
+          "Packed": null,
+          "Null": "YES",
+          "Index_type": "BTREE",
+          "Comment": "",
+          "Index_comment": ""
+        }
+      ],
+      "row_count": 182494,
+      "date_statistics": {
+        "min_date": "2021-09-01",
+        "max_date": "2025-07-11",
+        "unique_dates": 1393
+      }
+    },
+    "field_relationships": {
+      "marshrut": {
+        "unique_values": [
+          {
+            "value": 990,
+            "count": 29329
+          },
+          {
+            "value": 204,
+            "count": 21776
+          },
+          {
+            "value": 272,
+            "count": 8916
+          },
+          {
+            "value": 997,
+            "count": 7432
+          },
+          {
+            "value": 999,
+            "count": 4673
+          },
+          {
+            "value": 63,
+            "count": 4388
+          },
+          {
+            "value": 260,
+            "count": 4071
+          },
+          {
+            "value": 68,
+            "count": 3671
+          },
+          {
+            "value": 33,
+            "count": 3453
+          },
+          {
+            "value": 989,
+            "count": 2844
+          },
+          {
+            "value": 107,
+            "count": 2763
+          },
+          {
+            "value": 72,
+            "count": 2719
+          },
+          {
+            "value": 170,
+            "count": 2594
+          },
+          {
+            "value": 96,
+            "count": 2489
+          },
+          {
+            "value": 102,
+            "count": 2429
+          },
+          {
+            "value": 20,
+            "count": 2222
+          },
+          {
+            "value": 112,
+            "count": 2106
+          },
+          {
+            "value": 32,
+            "count": 2011
+          },
+          {
+            "value": 109,
+            "count": 1876
+          },
+          {
+            "value": 106,
+            "count": 1868
+          },
+          {
+            "value": 222,
+            "count": 1849
+          },
+          {
+            "value": 140,
+            "count": 1729
+          },
+          {
+            "value": 249,
+            "count": 1696
+          },
+          {
+            "value": 7,
+            "count": 1688
+          },
+          {
+            "value": 991,
+            "count": 1617
+          },
+          {
+            "value": 224,
+            "count": 1613
+          },
+          {
+            "value": 45,
+            "count": 1589
+          },
+          {
+            "value": 62,
+            "count": 1570
+          },
+          {
+            "value": 81,
+            "count": 1528
+          },
+          {
+            "value": 247,
+            "count": 1518
+          },
+          {
+            "value": 263,
+            "count": 1383
+          },
+          {
+            "value": 64,
+            "count": 1356
+          },
+          {
+            "value": 241,
+            "count": 1351
+          },
+          {
+            "value": 58,
+            "count": 1345
+          },
+          {
+            "value": 67,
+            "count": 1344
+          },
+          {
+            "value": 31,
+            "count": 1331
+          },
+          {
+            "value": 208,
+            "count": 1317
+          },
+          {
+            "value": 77,
+            "count": 1311
+          },
+          {
+            "value": 21,
+            "count": 1293
+          },
+          {
+            "value": 57,
+            "count": 1292
+          },
+          {
+            "value": 22,
+            "count": 1291
+          },
+          {
+            "value": 48,
+            "count": 1286
+          },
+          {
+            "value": 217,
+            "count": 1243
+          },
+          {
+            "value": 280,
+            "count": 1236
+          },
+          {
+            "value": 206,
+            "count": 1142
+          },
+          {
+            "value": 47,
+            "count": 1130
+          },
+          {
+            "value": 243,
+            "count": 1116
+          },
+          {
+            "value": 123,
+            "count": 1077
+          },
+          {
+            "value": 41,
+            "count": 1061
+          },
+          {
+            "value": 252,
+            "count": 1017
+          }
+        ],
+        "statistics": {
+          "unique_count": 126,
+          "non_null_count": 182494,
+          "total_count": 182494
+        }
+      },
+      "vipusk": {
+        "unique_values": [
+          {
+            "value": 1,
+            "count": 69383
+          },
+          {
+            "value": 2,
+            "count": 32398
+          },
+          {
+            "value": 3,
+            "count": 14283
+          },
+          {
+            "value": 4,
+            "count": 11514
+          },
+          {
+            "value": 5,
+            "count": 8097
+          },
+          {
+            "value": 6,
+            "count": 5637
+          },
+          {
+            "value": 7,
+            "count": 4877
+          },
+          {
+            "value": 8,
+            "count": 4324
+          },
+          {
+            "value": 10,
+            "count": 4140
+          },
+          {
+            "value": 11,
+            "count": 3604
+          },
+          {
+            "value": 9,
+            "count": 3480
+          },
+          {
+            "value": 12,
+            "count": 3134
+          },
+          {
+            "value": 13,
+            "count": 2503
+          },
+          {
+            "value": 14,
+            "count": 1831
+          },
+          {
+            "value": 20,
+            "count": 1469
+          },
+          {
+            "value": 15,
+            "count": 1173
+          },
+          {
+            "value": 16,
+            "count": 1114
+          },
+          {
+            "value": 17,
+            "count": 1044
+          },
+          {
+            "value": 18,
+            "count": 983
+          },
+          {
+            "value": 19,
+            "count": 933
+          },
+          {
+            "value": 21,
+            "count": 863
+          },
+          {
+            "value": 22,
+            "count": 854
+          },
+          {
+            "value": 23,
+            "count": 848
+          },
+          {
+            "value": 30,
+            "count": 477
+          },
+          {
+            "value": 40,
+            "count": 372
+          },
+          {
+            "value": 70,
+            "count": 261
+          },
+          {
+            "value": 80,
+            "count": 219
+          },
+          {
+            "value": 41,
+            "count": 176
+          },
+          {
+            "value": 60,
+            "count": 142
+          },
+          {
+            "value": 90,
+            "count": 140
+          },
+          {
+            "value": 50,
+            "count": 50
+          },
+          {
+            "value": 24,
+            "count": 9
+          },
+          {
+            "value": 25,
+            "count": 4
+          },
+          {
+            "value": 26,
+            "count": 2
+          },
+          {
+            "value": 27,
+            "count": 1
+          },
+          {
+            "value": 28,
+            "count": 1
+          },
+          {
+            "value": 29,
+            "count": 1
+          }
+        ],
+        "statistics": {
+          "unique_count": 38,
+          "non_null_count": 182494,
+          "total_count": 182494
+        }
+      },
+      "smena": {
+        "unique_values": [
+          {
+            "value": "1",
+            "count": 65886
+          },
+          {
+            "value": "5",
+            "count": 57311
+          },
+          {
+            "value": "2",
+            "count": 38055
+          },
+          {
+            "value": "4",
+            "count": 19496
+          },
+          {
+            "value": "В",
+            "count": 1738
+          },
+          {
+            "value": "6",
+            "count": 6
+          },
+          {
+            "value": "0",
+            "count": 1
+          },
+          {
+            "value": "3",
+            "count": 1
+          }
+        ],
+        "statistics": {
+          "unique_count": 8,
+          "non_null_count": 182494,
+          "total_count": 182494
+        }
+      },
+      "tabvoditel": {
+        "unique_values": [
+          {
+            "value": 5050,
+            "count": 2160
+          },
+          {
+            "value": 5083,
+            "count": 2143
+          },
+          {
+            "value": 5135,
+            "count": 2108
+          },
+          {
+            "value": 5177,
+            "count": 2080
+          },
+          {
+            "value": 6029,
+            "count": 1957
+          },
+          {
+            "value": 5281,
+            "count": 1928
+          },
+          {
+            "value": 5076,
+            "count": 1663
+          },
+          {
+            "value": 3617,
+            "count": 1273
+          },
+          {
+            "value": 5025,
+            "count": 1227
+          },
+          {
+            "value": 5153,
+            "count": 1081
+          },
+          {
+            "value": 5023,
+            "count": 1029
+          },
+          {
+            "value": 3723,
+            "count": 1000
+          },
+          {
+            "value": 5002,
+            "count": 987
+          },
+          {
+            "value": 5155,
+            "count": 987
+          },
+          {
+            "value": 3718,
+            "count": 969
+          },
+          {
+            "value": 5087,
+            "count": 963
+          },
+          {
+            "value": 5202,
+            "count": 924
+          },
+          {
+            "value": 5005,
+            "count": 920
+          },
+          {
+            "value": 5176,
+            "count": 917
+          },
+          {
+            "value": 5064,
+            "count": 905
+          },
+          {
+            "value": 5089,
+            "count": 905
+          },
+          {
+            "value": 5017,
+            "count": 900
+          },
+          {
+            "value": 5093,
+            "count": 898
+          },
+          {
+            "value": 5109,
+            "count": 896
+          },
+          {
+            "value": 5068,
+            "count": 887
+          },
+          {
+            "value": 14,
+            "count": 871
+          },
+          {
+            "value": 5118,
+            "count": 868
+          },
+          {
+            "value": 5038,
+            "count": 850
+          },
+          {
+            "value": 5222,
+            "count": 847
+          },
+          {
+            "value": 5116,
+            "count": 843
+          },
+          {
+            "value": 5159,
+            "count": 839
+          },
+          {
+            "value": 5289,
+            "count": 831
+          },
+          {
+            "value": 5073,
+            "count": 825
+          },
+          {
+            "value": 5036,
+            "count": 822
+          },
+          {
+            "value": 5145,
+            "count": 801
+          },
+          {
+            "value": 5290,
+            "count": 790
+          },
+          {
+            "value": 5051,
+            "count": 784
+          },
+          {
+            "value": 5361,
+            "count": 776
+          },
+          {
+            "value": 5120,
+            "count": 765
+          },
+          {
+            "value": 5119,
+            "count": 764
+          },
+          {
+            "value": 5230,
+            "count": 754
+          },
+          {
+            "value": 3226,
+            "count": 753
+          },
+          {
+            "value": 3776,
+            "count": 747
+          },
+          {
+            "value": 5019,
+            "count": 747
+          },
+          {
+            "value": 5212,
+            "count": 745
+          },
+          {
+            "value": 5220,
+            "count": 742
+          },
+          {
+            "value": 5232,
+            "count": 735
+          },
+          {
+            "value": 5111,
+            "count": 726
+          },
+          {
+            "value": 5218,
+            "count": 725
+          },
+          {
+            "value": 5283,
+            "count": 719
+          }
+        ],
+        "statistics": {
+          "unique_count": 801,
+          "non_null_count": 182494,
+          "total_count": 182494
+        }
+      },
+      "fiovoditel": {
+        "unique_values": [
+          {
+            "value": "Яловенко Дмитро Миколайович",
+            "count": 2177
+          },
+          {
+            "value": "Дем`янов Спартак Вадимович",
+            "count": 2145
+          },
+          {
+            "value": "Бичков Євген Іванович",
+            "count": 2108
+          },
+          {
+            "value": "Пилипенко Андрій Миколайович",
+            "count": 2082
+          },
+          {
+            "value": "Нагдалиєв Ісмаіл Магамед огли",
+            "count": 2057
+          },
+          {
+            "value": "Тімофєєв Сергій Анаталійович",
+            "count": 1928
+          },
+          {
+            "value": "Левицький Сергій Олексійович",
+            "count": 1665
+          },
+          {
+            "value": "Маковкін Михайло Федорович",
+            "count": 1296
+          },
+          {
+            "value": "Меркушев Анатолій Олексійович",
+            "count": 1278
+          },
+          {
+            "value": "Цап Юрій Михайлович",
+            "count": 1258
+          },
+          {
+            "value": "Бєльський Вадим Вікторович",
+            "count": 1185
+          },
+          {
+            "value": "Бронніков Максим Борисович",
+            "count": 1144
+          },
+          {
+            "value": "Чорний Андрій Анатолійович",
+            "count": 1076
+          },
+          {
+            "value": "Сільченко  Микола Іванович",
+            "count": 1065
+          },
+          {
+            "value": "Ступін Ігор Валентинович",
+            "count": 1065
+          },
+          {
+            "value": "Міхов Степан Федорович",
+            "count": 1059
+          },
+          {
+            "value": "Лихобаба Сергій Васильович",
+            "count": 1057
+          },
+          {
+            "value": "Яхимович Яков Анатолійович",
+            "count": 1049
+          },
+          {
+            "value": "Водяницький Віталій Миколайович",
+            "count": 1042
+          },
+          {
+            "value": "Сапєлкін Олексій Миколайович",
+            "count": 1040
+          },
+          {
+            "value": "Білоусов Володимир Олександрович",
+            "count": 1034
+          },
+          {
+            "value": "Кобернік Віталій Михайлович",
+            "count": 1017
+          },
+          {
+            "value": "Сейранов Арменак Ашотович",
+            "count": 1012
+          },
+          {
+            "value": "Чебан Микола Володимирович",
+            "count": 1010
+          },
+          {
+            "value": "Пацурія Аміран Антіпович",
+            "count": 1003
+          },
+          {
+            "value": "Коршак Сергій Іванович",
+            "count": 1000
+          },
+          {
+            "value": "Масалаб Геннадій Іванович",
+            "count": 985
+          },
+          {
+            "value": "Філатов Валерій Вячеславович",
+            "count": 982
+          },
+          {
+            "value": "Славський Юрій Володимирович",
+            "count": 981
+          },
+          {
+            "value": "Писаревський Віктор Миколайович",
+            "count": 976
+          },
+          {
+            "value": "Воронін Віталій Олександрович",
+            "count": 969
+          },
+          {
+            "value": "Суворов Андрій Володимирович",
+            "count": 951
+          },
+          {
+            "value": "Філімоненко Сергій Леонідович",
+            "count": 945
+          },
+          {
+            "value": "Леонідов Андрій Олександрович",
+            "count": 933
+          },
+          {
+            "value": "Данілов Андрій Вікторович",
+            "count": 927
+          },
+          {
+            "value": "Моісеєнко Олександр Іванович",
+            "count": 922
+          },
+          {
+            "value": "Страхов Андрій Михайлович",
+            "count": 901
+          },
+          {
+            "value": "Андрієць Віктор Даніілович",
+            "count": 898
+          },
+          {
+            "value": "Іваненко Євген Олександрович",
+            "count": 873
+          },
+          {
+            "value": "Доценко Дмитро Миколайович",
+            "count": 855
+          },
+          {
+            "value": "Мартишов Володимир Петрович",
+            "count": 853
+          },
+          {
+            "value": "Цап Микола Михайлович",
+            "count": 848
+          },
+          {
+            "value": "Шаталов Анатолій Михайлович",
+            "count": 847
+          },
+          {
+            "value": "Рвачов Сергій Олексійович",
+            "count": 844
+          },
+          {
+            "value": "Ткебучава Лері Михайлович",
+            "count": 828
+          },
+          {
+            "value": "Золотовецький Вячеслав Павлович",
+            "count": 825
+          },
+          {
+            "value": "Канцедал Дмитро Петрович",
+            "count": 825
+          },
+          {
+            "value": "Моргун Олександр Олексійович",
+            "count": 809
+          },
+          {
+            "value": "Івлєв Віталій Михайлович",
+            "count": 806
+          },
+          {
+            "value": "Головенко Сергій Вячеславович",
+            "count": 803
+          }
+        ],
+        "statistics": {
+          "unique_count": 531,
+          "non_null_count": 164826,
+          "total_count": 182494
+        }
+      },
+      "tabconduktor": {
+        "unique_values": [
+          {
+            "value": 328,
+            "count": 2
+          }
+        ],
+        "statistics": {
+          "unique_count": 2,
+          "non_null_count": 178047,
+          "total_count": 182494
+        }
+      },
+      "fioconduktor": {
+        "unique_values": [
+          {
+            "value": "na",
+            "count": 15282
+          },
+          {
+            "value": "Чибісов Юрій Іванович (осн.)",
+            "count": 2
+          },
+          {
+            "value": "0",
+            "count": 1
+          }
+        ],
+        "statistics": {
+          "unique_count": 3,
+          "non_null_count": 15285,
+          "total_count": 182494
+        }
+      },
+      "pe№": {
+        "unique_values": [
+          {
+            "value": 1232,
+            "count": 1627
+          },
+          {
+            "value": 1301,
+            "count": 1614
+          },
+          {
+            "value": 1221,
+            "count": 1587
+          },
+          {
+            "value": 1295,
+            "count": 1561
+          },
+          {
+            "value": 1277,
+            "count": 1559
+          },
+          {
+            "value": 1253,
+            "count": 1538
+          },
+          {
+            "value": 1329,
+            "count": 1532
+          },
+          {
+            "value": 1241,
+            "count": 1521
+          },
+          {
+            "value": 1234,
+            "count": 1507
+          },
+          {
+            "value": 1286,
+            "count": 1502
+          },
+          {
+            "value": 1300,
+            "count": 1497
+          },
+          {
+            "value": 1275,
+            "count": 1480
+          },
+          {
+            "value": 1219,
+            "count": 1469
+          },
+          {
+            "value": 1279,
+            "count": 1462
+          },
+          {
+            "value": 1269,
+            "count": 1446
+          },
+          {
+            "value": 1205,
+            "count": 1438
+          },
+          {
+            "value": 1193,
+            "count": 1422
+          },
+          {
+            "value": 1246,
+            "count": 1402
+          },
+          {
+            "value": 1224,
+            "count": 1360
+          },
+          {
+            "value": 1256,
+            "count": 1355
+          },
+          {
+            "value": 1250,
+            "count": 1352
+          },
+          {
+            "value": 1274,
+            "count": 1344
+          },
+          {
+            "value": 1285,
+            "count": 1325
+          },
+          {
+            "value": 1192,
+            "count": 1308
+          },
+          {
+            "value": 1198,
+            "count": 1305
+          },
+          {
+            "value": 1313,
+            "count": 1305
+          },
+          {
+            "value": 1257,
+            "count": 1298
+          },
+          {
+            "value": 1194,
+            "count": 1297
+          },
+          {
+            "value": 1283,
+            "count": 1291
+          },
+          {
+            "value": 1195,
+            "count": 1281
+          },
+          {
+            "value": 1245,
+            "count": 1281
+          },
+          {
+            "value": 1290,
+            "count": 1266
+          },
+          {
+            "value": 1235,
+            "count": 1257
+          },
+          {
+            "value": 1298,
+            "count": 1257
+          },
+          {
+            "value": 1254,
+            "count": 1253
+          },
+          {
+            "value": 1200,
+            "count": 1249
+          },
+          {
+            "value": 1333,
+            "count": 1249
+          },
+          {
+            "value": 1188,
+            "count": 1239
+          },
+          {
+            "value": 1305,
+            "count": 1235
+          },
+          {
+            "value": 1337,
+            "count": 1234
+          },
+          {
+            "value": 1189,
+            "count": 1227
+          },
+          {
+            "value": 1299,
+            "count": 1207
+          },
+          {
+            "value": 1311,
+            "count": 1204
+          },
+          {
+            "value": 1258,
+            "count": 1199
+          },
+          {
+            "value": 1330,
+            "count": 1199
+          },
+          {
+            "value": 1261,
+            "count": 1198
+          },
+          {
+            "value": 1264,
+            "count": 1195
+          },
+          {
+            "value": 1225,
+            "count": 1194
+          },
+          {
+            "value": 1350,
+            "count": 1185
+          },
+          {
+            "value": 1294,
+            "count": 1182
+          }
+        ],
+        "statistics": {
+          "unique_count": 217,
+          "non_null_count": 182494,
+          "total_count": 182494
+        }
+      },
+      "putlist№": {
+        "unique_values": [
+          {
+            "value": "010322-98911",
+            "count": 46
+          },
+          {
+            "value": "020322-98911",
+            "count": 46
+          },
+          {
+            "value": "030322-98911",
+            "count": 46
+          },
+          {
+            "value": "040322-98911",
+            "count": 45
+          },
+          {
+            "value": "050322-98911",
+            "count": 45
+          },
+          {
+            "value": "060322-98911",
+            "count": 45
+          },
+          {
+            "value": "070322-98911",
+            "count": 45
+          },
+          {
+            "value": "080322-98911",
+            "count": 45
+          },
+          {
+            "value": "090322-98911",
+            "count": 45
+          },
+          {
+            "value": "100322-98911",
+            "count": 45
+          },
+          {
+            "value": "110322-98911",
+            "count": 45
+          },
+          {
+            "value": "120322-98911",
+            "count": 45
+          },
+          {
+            "value": "130322-98911",
+            "count": 45
+          },
+          {
+            "value": "130522-98911",
+            "count": 45
+          },
+          {
+            "value": "140322-98911",
+            "count": 44
+          },
+          {
+            "value": "150322-98911",
+            "count": 44
+          },
+          {
+            "value": "110522-98911",
+            "count": 43
+          },
+          {
+            "value": "120522-98911",
+            "count": 43
+          },
+          {
+            "value": "160322-98911",
+            "count": 43
+          },
+          {
+            "value": "170322-98911",
+            "count": 43
+          },
+          {
+            "value": "180322-98911",
+            "count": 43
+          },
+          {
+            "value": "240322-98911",
+            "count": 43
+          },
+          {
+            "value": "250322-98911",
+            "count": 43
+          },
+          {
+            "value": "280322-98911",
+            "count": 43
+          },
+          {
+            "value": "140522-98911",
+            "count": 42
+          },
+          {
+            "value": "190322-98911",
+            "count": 42
+          },
+          {
+            "value": "200322-98911",
+            "count": 42
+          },
+          {
+            "value": "210322-98911",
+            "count": 42
+          },
+          {
+            "value": "220322-98911",
+            "count": 42
+          },
+          {
+            "value": "230322-98911",
+            "count": 42
+          },
+          {
+            "value": "260322-98911",
+            "count": 42
+          },
+          {
+            "value": "270322-98911",
+            "count": 42
+          },
+          {
+            "value": "290322-98911",
+            "count": 42
+          },
+          {
+            "value": "150522-98911",
+            "count": 41
+          },
+          {
+            "value": "300322-98911",
+            "count": 41
+          },
+          {
+            "value": "310322-98911",
+            "count": 41
+          },
+          {
+            "value": "060522-98911",
+            "count": 40
+          },
+          {
+            "value": "050522-98911",
+            "count": 39
+          },
+          {
+            "value": "040522-98911",
+            "count": 38
+          },
+          {
+            "value": "100522-98911",
+            "count": 38
+          },
+          {
+            "value": "070522-98911",
+            "count": 37
+          },
+          {
+            "value": "030522-98911",
+            "count": 36
+          },
+          {
+            "value": "010422-98911",
+            "count": 35
+          },
+          {
+            "value": "090522-98911",
+            "count": 35
+          },
+          {
+            "value": "200422-98911",
+            "count": 35
+          },
+          {
+            "value": "270422-98911",
+            "count": 35
+          },
+          {
+            "value": "020422-98911",
+            "count": 34
+          },
+          {
+            "value": "020522-98911",
+            "count": 34
+          },
+          {
+            "value": "190422-98911",
+            "count": 34
+          },
+          {
+            "value": "210422-98911",
+            "count": 34
+          }
+        ],
+        "statistics": {
+          "unique_count": 173937,
+          "non_null_count": 177800,
+          "total_count": 182494
+        }
+      },
+      "data_day": {
+        "unique_values": [
+          {
+            "value": "2024-01-25",
+            "count": 307
+          },
+          {
+            "value": "2024-01-16",
+            "count": 306
+          },
+          {
+            "value": "2024-01-15",
+            "count": 305
+          },
+          {
+            "value": "2024-01-17",
+            "count": 305
+          },
+          {
+            "value": "2024-01-24",
+            "count": 305
+          },
+          {
+            "value": "2024-01-26",
+            "count": 305
+          },
+          {
+            "value": "2024-01-29",
+            "count": 304
+          },
+          {
+            "value": "2024-01-31",
+            "count": 304
+          },
+          {
+            "value": "2024-01-22",
+            "count": 303
+          },
+          {
+            "value": "2024-01-23",
+            "count": 302
+          },
+          {
+            "value": "2024-01-30",
+            "count": 302
+          },
+          {
+            "value": "2024-01-19",
+            "count": 301
+          },
+          {
+            "value": "2024-01-18",
+            "count": 300
+          },
+          {
+            "value": "2024-01-12",
+            "count": 295
+          },
+          {
+            "value": "2024-01-08",
+            "count": 293
+          },
+          {
+            "value": "2024-01-05",
+            "count": 291
+          },
+          {
+            "value": "2024-01-09",
+            "count": 291
+          },
+          {
+            "value": "2024-01-03",
+            "count": 290
+          },
+          {
+            "value": "2024-01-10",
+            "count": 290
+          },
+          {
+            "value": "2024-01-11",
+            "count": 290
+          },
+          {
+            "value": "2024-01-04",
+            "count": 288
+          },
+          {
+            "value": "2024-01-13",
+            "count": 267
+          },
+          {
+            "value": "2024-01-20",
+            "count": 267
+          },
+          {
+            "value": "2024-01-14",
+            "count": 266
+          },
+          {
+            "value": "2024-01-28",
+            "count": 265
+          },
+          {
+            "value": "2024-01-27",
+            "count": 264
+          },
+          {
+            "value": "2024-01-21",
+            "count": 263
+          },
+          {
+            "value": "2024-01-07",
+            "count": 262
+          },
+          {
+            "value": "2024-01-06",
+            "count": 259
+          },
+          {
+            "value": "2022-02-10",
+            "count": 216
+          },
+          {
+            "value": "2022-02-15",
+            "count": 216
+          },
+          {
+            "value": "2022-02-16",
+            "count": 216
+          },
+          {
+            "value": "2022-02-17",
+            "count": 216
+          },
+          {
+            "value": "2022-02-18",
+            "count": 216
+          },
+          {
+            "value": "2022-02-21",
+            "count": 216
+          },
+          {
+            "value": "2022-02-22",
+            "count": 216
+          },
+          {
+            "value": "2022-02-23",
+            "count": 216
+          },
+          {
+            "value": "2022-02-24",
+            "count": 216
+          },
+          {
+            "value": "2022-02-11",
+            "count": 214
+          },
+          {
+            "value": "2022-02-09",
+            "count": 212
+          },
+          {
+            "value": "2022-02-14",
+            "count": 212
+          },
+          {
+            "value": "2022-02-07",
+            "count": 210
+          },
+          {
+            "value": "2022-02-08",
+            "count": 210
+          },
+          {
+            "value": "2022-02-03",
+            "count": 208
+          },
+          {
+            "value": "2022-01-25",
+            "count": 204
+          },
+          {
+            "value": "2022-01-26",
+            "count": 204
+          },
+          {
+            "value": "2022-01-24",
+            "count": 202
+          },
+          {
+            "value": "2022-01-31",
+            "count": 202
+          },
+          {
+            "value": "2022-02-02",
+            "count": 202
+          },
+          {
+            "value": "2022-02-04",
+            "count": 202
+          }
+        ],
+        "statistics": {
+          "unique_count": 1393,
+          "non_null_count": 182494,
+          "total_count": 182494
+        }
+      }
+    },
+    "data_patterns": {
+      "by_date": [
+        {
+          "data_day": "2025-07-11",
+          "assignments_count": 193,
+          "routes_count": 49,
+          "shifts_count": 4,
+          "drivers_count": 1
+        },
+        {
+          "data_day": "2025-07-10",
+          "assignments_count": 193,
+          "routes_count": 49,
+          "shifts_count": 4,
+          "drivers_count": 1
+        },
+        {
+          "data_day": "2025-07-09",
+          "assignments_count": 193,
+          "routes_count": 49,
+          "shifts_count": 4,
+          "drivers_count": 1
+        },
+        {
+          "data_day": "2025-07-08",
+          "assignments_count": 193,
+          "routes_count": 49,
+          "shifts_count": 4,
+          "drivers_count": 119
+        },
+        {
+          "data_day": "2025-07-07",
+          "assignments_count": 193,
+          "routes_count": 49,
+          "shifts_count": 4,
+          "drivers_count": 125
+        },
+        {
+          "data_day": "2025-07-06",
+          "assignments_count": 161,
+          "routes_count": 50,
+          "shifts_count": 4,
+          "drivers_count": 93
+        },
+        {
+          "data_day": "2025-07-05",
+          "assignments_count": 163,
+          "routes_count": 49,
+          "shifts_count": 4,
+          "drivers_count": 95
+        },
+        {
+          "data_day": "2025-07-04",
+          "assignments_count": 195,
+          "routes_count": 50,
+          "shifts_count": 4,
+          "drivers_count": 126
+        },
+        {
+          "data_day": "2025-07-03",
+          "assignments_count": 195,
+          "routes_count": 49,
+          "shifts_count": 4,
+          "drivers_count": 127
+        },
+        {
+          "data_day": "2025-07-02",
+          "assignments_count": 193,
+          "routes_count": 49,
+          "shifts_count": 4,
+          "drivers_count": 129
+        },
+        {
+          "data_day": "2025-07-01",
+          "assignments_count": 193,
+          "routes_count": 49,
+          "shifts_count": 4,
+          "drivers_count": 126
+        }
+      ],
+      "by_route": [
+        {
+          "marshrut": 990,
+          "total_assignments": 506,
+          "days_active": 11,
+          "shifts_used": 2,
+          "drivers_count": 27
+        },
+        {
+          "marshrut": 204,
+          "total_assignments": 227,
+          "days_active": 11,
+          "shifts_used": 3,
+          "drivers_count": 44
+        },
+        {
+          "marshrut": 997,
+          "total_assignments": 143,
+          "days_active": 11,
+          "shifts_used": 1,
+          "drivers_count": 1
+        },
+        {
+          "marshrut": 63,
+          "total_assignments": 135,
+          "days_active": 11,
+          "shifts_used": 3,
+          "drivers_count": 8
+        },
+        {
+          "marshrut": 999,
+          "total_assignments": 110,
+          "days_active": 11,
+          "shifts_used": 2,
+          "drivers_count": 4
+        },
+        {
+          "marshrut": 272,
+          "total_assignments": 74,
+          "days_active": 11,
+          "shifts_used": 3,
+          "drivers_count": 16
+        },
+        {
+          "marshrut": 52,
+          "total_assignments": 52,
+          "days_active": 9,
+          "shifts_used": 3,
+          "drivers_count": 11
+        },
+        {
+          "marshrut": 96,
+          "total_assignments": 49,
+          "days_active": 11,
+          "shifts_used": 4,
+          "drivers_count": 8
+        },
+        {
+          "marshrut": 102,
+          "total_assignments": 44,
+          "days_active": 11,
+          "shifts_used": 1,
+          "drivers_count": 13
+        },
+        {
+          "marshrut": 107,
+          "total_assignments": 43,
+          "days_active": 11,
+          "shifts_used": 1,
+          "drivers_count": 7
+        },
+        {
+          "marshrut": 68,
+          "total_assignments": 32,
+          "days_active": 11,
+          "shifts_used": 4,
+          "drivers_count": 6
+        },
+        {
+          "marshrut": 206,
+          "total_assignments": 31,
+          "days_active": 11,
+          "shifts_used": 3,
+          "drivers_count": 7
+        },
+        {
+          "marshrut": 33,
+          "total_assignments": 29,
+          "days_active": 11,
+          "shifts_used": 3,
+          "drivers_count": 7
+        },
+        {
+          "marshrut": 72,
+          "total_assignments": 24,
+          "days_active": 11,
+          "shifts_used": 1,
+          "drivers_count": 6
+        },
+        {
+          "marshrut": 62,
+          "total_assignments": 22,
+          "days_active": 11,
+          "shifts_used": 1,
+          "drivers_count": 5
+        },
+        {
+          "marshrut": 109,
+          "total_assignments": 22,
+          "days_active": 11,
+          "shifts_used": 1,
+          "drivers_count": 5
+        },
+        {
+          "marshrut": 222,
+          "total_assignments": 22,
+          "days_active": 11,
+          "shifts_used": 2,
+          "drivers_count": 5
+        },
+        {
+          "marshrut": 260,
+          "total_assignments": 22,
+          "days_active": 11,
+          "shifts_used": 1,
+          "drivers_count": 5
+        },
+        {
+          "marshrut": 32,
+          "total_assignments": 22,
+          "days_active": 11,
+          "shifts_used": 1,
+          "drivers_count": 9
+        },
+        {
+          "marshrut": 224,
+          "total_assignments": 22,
+          "days_active": 11,
+          "shifts_used": 1,
+          "drivers_count": 11
+        }
+      ],
+      "by_shift": [
+        {
+          "smena": "1",
+          "total_assignments": 729,
+          "routes_count": 22,
+          "drivers_count": 88,
+          "avg_work_hours": "5.56229995"
+        },
+        {
+          "smena": "2",
+          "total_assignments": 586,
+          "routes_count": 21,
+          "drivers_count": 80,
+          "avg_work_hours": "5.80975540"
+        },
+        {
+          "smena": "4",
+          "total_assignments": 156,
+          "routes_count": 18,
+          "drivers_count": 36,
+          "avg_work_hours": "13.39049145"
+        },
+        {
+          "smena": "5",
+          "total_assignments": 594,
+          "routes_count": 37,
+          "drivers_count": 152,
+          "avg_work_hours": "12.93369809"
+        }
+      ]
+    }
+  },
+  "ms_access_analysis": {
+    "sample_data": [
+      {
+        "marshrut": 20,
+        "vipusk": 1,
+        "smena": "4",
+        "tabvoditelZ": 0,
+        "tabvoditel": 3691,
+        "fiovoditel": "Маркін Володимир Іванович",
+        "tabinstr": 0,
+        "fioinstr": null,
+        "tabconduktorZ": 0,
+        "tabconduktor": 0,
+        "fioconduktor": null,
+        "sost": 1,
+        "pe№": 1266,
+        "tvih": "06:02",
+        "tvihmarsrut": "05:52",
+        "kpvih": "Депо",
+        "tzah": "19:27",
+        "tend": "19:37",
+        "kpzah": "Депо",
+        "tob1": "00:00",
+        "tob2": "00:00",
+        "putlist№": "070725-2014",
+        "den_nedeli": "понедельник",
+        "data_day": "2025-07-07",
+        "priznak": null,
+        "tipvipusk": "ПP",
+        "mestootst": "Лiк.швидко",
+        "tna4otst": "10:28",
+        "tkonotst": "14:40",
+        "data_file": "01.07.2025",
+        "size_file": null,
+        "print": 0,
+        "tPodgotovkaVod": "00:10",
+        "tPodgotovkaKon": "00:10",
+        "tSda4aVod": "00:10",
+        "tSda4aKon": "00:10",
+        "tVihdepoVod": "05:52",
+        "tVihdepoKon": "05:52",
+        "tZahdepoVod": "19:37",
+        "tZahdepoKon": "19:37",
+        "Soobhenie": null,
+        "key": 830403,
+        "del": 0,
+        "zaprv": 50,
+        "zaprFakt": 0,
+        "ZaprAdr": "Бочка",
+        "fl1": 0
+      },
+      {
+        "marshrut": 21,
+        "vipusk": 1,
+        "smena": "4",
+        "tabvoditelZ": 0,
+        "tabvoditel": 5145,
+        "fiovoditel": "Ткебучава Лері Михайлович",
+        "tabinstr": 0,
+        "fioinstr": null,
+        "tabconduktorZ": 0,
+        "tabconduktor": 0,
+        "fioconduktor": null,
+        "sost": 1,
+        "pe№": 1223,
+        "tvih": "06:25",
+        "tvihmarsrut": "06:15",
+        "kpvih": "Депо",
+        "tzah": "20:01",
+        "tend": "20:11",
+        "kpzah": "Депо",
+        "tob1": "00:00",
+        "tob2": "00:00",
+        "putlist№": "070725-2114",
+        "den_nedeli": "понедельник",
+        "data_day": "2025-07-07",
+        "priznak": null,
+        "tipvipusk": "ПP",
+        "mestootst": "АС Iндустр",
+        "tna4otst": "10:40",
+        "tkonotst": "14:50",
+        "data_file": "01.07.2025",
+        "size_file": null,
+        "print": 0,
+        "tPodgotovkaVod": "00:10",
+        "tPodgotovkaKon": "00:10",
+        "tSda4aVod": "00:10",
+        "tSda4aKon": "00:10",
+        "tVihdepoVod": "06:15",
+        "tVihdepoKon": "06:15",
+        "tZahdepoVod": "20:11",
+        "tZahdepoKon": "20:11",
+        "Soobhenie": null,
+        "key": 830404,
+        "del": 0,
+        "zaprv": 50,
+        "zaprFakt": 0,
+        "ZaprAdr": "Бочка",
+        "fl1": 0
+      },
+      {
+        "marshrut": 22,
+        "vipusk": 1,
+        "smena": "1",
+        "tabvoditelZ": 0,
+        "tabvoditel": 5218,
+        "fiovoditel": "Моргун Олександр Олексійович",
+        "tabinstr": 0,
+        "fioinstr": null,
+        "tabconduktorZ": 0,
+        "tabconduktor": 0,
+        "fioconduktor": null,
+        "sost": 1,
+        "pe№": 1391,
+        "tvih": "06:00",
+        "tvihmarsrut": "05:50",
+        "kpvih": "Депо",
+        "tzah": "14:49",
+        "tend": "14:49",
+        "kpzah": "м.Холодна",
+        "tob1": "01:15",
+        "tob2": "00:00",
+        "putlist№": "070725-2211",
+        "den_nedeli": "понедельник",
+        "data_day": "2025-07-07",
+        "priznak": null,
+        "tipvipusk": "ДC",
+        "mestootst": null,
+        "tna4otst": null,
+        "tkonotst": null,
+        "data_file": "01.07.2025",
+        "size_file": null,
+        "print": 0,
+        "tPodgotovkaVod": "00:10",
+        "tPodgotovkaKon": "00:10",
+        "tSda4aVod": "00:00",
+        "tSda4aKon": "00:10",
+        "tVihdepoVod": "05:50",
+        "tVihdepoKon": "05:50",
+        "tZahdepoVod": "14:49",
+        "tZahdepoKon": "14:59",
+        "Soobhenie": null,
+        "key": 830293,
+        "del": 0,
+        "zaprv": 110,
+        "zaprFakt": 0,
+        "ZaprAdr": "Бочка",
+        "fl1": 0
+      },
+      {
+        "marshrut": 22,
+        "vipusk": 1,
+        "smena": "2",
+        "tabvoditelZ": 0,
+        "tabvoditel": 5087,
+        "fiovoditel": "Ступін Ігор Валентинович",
+        "tabinstr": 0,
+        "fioinstr": null,
+        "tabconduktorZ": 0,
+        "tabconduktor": 0,
+        "fioconduktor": null,
+        "sost": 1,
+        "pe№": 1391,
+        "tvih": "14:49",
+        "tvihmarsrut": "14:49",
+        "kpvih": "м.Холодна",
+        "tzah": "22:13",
+        "tend": "22:23",
+        "kpzah": "Депо",
+        "tob1": "00:40",
+        "tob2": "00:00",
+        "putlist№": "070725-2212",
+        "den_nedeli": "понедельник",
+        "data_day": "2025-07-07",
+        "priznak": null,
+        "tipvipusk": "ДC",
+        "mestootst": null,
+        "tna4otst": null,
+        "tkonotst": null,
+        "data_file": "01.07.2025",
+        "size_file": null,
+        "print": 0,
+        "tPodgotovkaVod": "00:00",
+        "tPodgotovkaKon": "00:0",
+        "tSda4aVod": "00:10",
+        "tSda4aKon": "00:10",
+        "tVihdepoVod": "14:49",
+        "tVihdepoKon": "14:49",
+        "tZahdepoVod": "22:23",
+        "tZahdepoKon": "22:23",
+        "Soobhenie": null,
+        "key": 830323,
+        "del": 0,
+        "zaprv": 0,
+        "zaprFakt": 0,
+        "ZaprAdr": "-",
+        "fl1": 0
+      },
+      {
+        "marshrut": 29,
+        "vipusk": 1,
+        "smena": "5",
+        "tabvoditelZ": 0,
+        "tabvoditel": 5496,
+        "fiovoditel": "Голоскуб Михайло Олександрович",
+        "tabinstr": 0,
+        "fioinstr": null,
+        "tabconduktorZ": 0,
+        "tabconduktor": 0,
+        "fioconduktor": null,
+        "sost": 2,
+        "pe№": 1264,
+        "tvih": "06:09",
+        "tvihmarsrut": "05:59",
+        "kpvih": "Депо",
+        "tzah": "19:47",
+        "tend": "19:57",
+        "kpzah": "Депо",
+        "tob1": "01:15",
+        "tob2": "00:43",
+        "putlist№": "070725-2915",
+        "den_nedeli": "понедельник",
+        "data_day": "2025-07-07",
+        "priznak": null,
+        "tipvipusk": "O1",
+        "mestootst": null,
+        "tna4otst": null,
+        "tkonotst": null,
+        "data_file": "01.07.2025",
+        "size_file": null,
+        "print": 0,
+        "tPodgotovkaVod": "00:10",
+        "tPodgotovkaKon": "00:10",
+        "tSda4aVod": "00:10",
+        "tSda4aKon": "00:10",
+        "tVihdepoVod": "05:59",
+        "tVihdepoKon": "05:59",
+        "tZahdepoVod": "19:57",
+        "tZahdepoKon": "19:57",
+        "Soobhenie": null,
+        "key": 830353,
+        "del": 0,
+        "zaprv": 100,
+        "zaprFakt": 0,
+        "ZaprAdr": "Бочка",
+        "fl1": 0
+      }
+    ],
+    "all_fields": [
+      {
+        "COLUMN_NAME": "marshrut",
+        "DATA_TYPE": "smallint",
+        "COLUMN_TYPE": "smallint(6)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "vipusk",
+        "DATA_TYPE": "tinyint",
+        "COLUMN_TYPE": "tinyint(4)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "smena",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(6)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tabvoditelZ",
+        "DATA_TYPE": "int",
+        "COLUMN_TYPE": "int(11)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tabvoditel",
+        "DATA_TYPE": "int",
+        "COLUMN_TYPE": "int(11)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "fiovoditel",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(50)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tabinstr",
+        "DATA_TYPE": "int",
+        "COLUMN_TYPE": "int(11)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "fioinstr",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(50)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tabconduktorZ",
+        "DATA_TYPE": "int",
+        "COLUMN_TYPE": "int(11)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tabconduktor",
+        "DATA_TYPE": "int",
+        "COLUMN_TYPE": "int(11)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "fioconduktor",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(50)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "sost",
+        "DATA_TYPE": "tinyint",
+        "COLUMN_TYPE": "tinyint(4)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "pe№",
+        "DATA_TYPE": "int",
+        "COLUMN_TYPE": "int(6)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tvih",
+        "DATA_TYPE": "char",
+        "COLUMN_TYPE": "char(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tvihmarsrut",
+        "DATA_TYPE": "char",
+        "COLUMN_TYPE": "char(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "kpvih",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(10)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tzah",
+        "DATA_TYPE": "char",
+        "COLUMN_TYPE": "char(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tend",
+        "DATA_TYPE": "char",
+        "COLUMN_TYPE": "char(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "kpzah",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(10)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tob1",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tob2",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "putlist№",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(50)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "den_nedeli",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(15)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "data_day",
+        "DATA_TYPE": "date",
+        "COLUMN_TYPE": "date",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "priznak",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(3)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tipvipusk",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(6)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "mestootst",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(10)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tna4otst",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tkonotst",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "data_file",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(20)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "size_file",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(11)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "print",
+        "DATA_TYPE": "tinyint",
+        "COLUMN_TYPE": "tinyint(4)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tPodgotovkaVod",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tPodgotovkaKon",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tSda4aVod",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tSda4aKon",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tVihdepoVod",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tVihdepoKon",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tZahdepoVod",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "tZahdepoKon",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(5)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "Soobhenie",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(255)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "key",
+        "DATA_TYPE": "int",
+        "COLUMN_TYPE": "int(11)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "del",
+        "DATA_TYPE": "tinyint",
+        "COLUMN_TYPE": "tinyint(4)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "zaprv",
+        "DATA_TYPE": "int",
+        "COLUMN_TYPE": "int(11)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "zaprFakt",
+        "DATA_TYPE": "int",
+        "COLUMN_TYPE": "int(11)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "ZaprAdr",
+        "DATA_TYPE": "varchar",
+        "COLUMN_TYPE": "varchar(30)",
+        "COLUMN_COMMENT": ""
+      },
+      {
+        "COLUMN_NAME": "fl1",
+        "DATA_TYPE": "int",
+        "COLUMN_TYPE": "int(11)",
+        "COLUMN_COMMENT": ""
+      }
+    ],
+    "fields_with_data": {
+      "marshrut": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 52
+      },
+      "vipusk": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 23
+      },
+      "smena": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 4
+      },
+      "tabvoditelZ": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 1
+      },
+      "tabvoditel": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 251
+      },
+      "fiovoditel": {
+        "total": 2065,
+        "non_null": 1049,
+        "unique_vals": 176
+      },
+      "tabinstr": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 6
+      },
+      "fioinstr": {
+        "total": 2065,
+        "non_null": 6,
+        "unique_vals": 5
+      },
+      "tabconduktorZ": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 1
+      },
+      "tabconduktor": {
+        "total": 2065,
+        "non_null": 2035,
+        "unique_vals": 1
+      },
+      "fioconduktor": {
+        "total": 2065,
+        "non_null": 0,
+        "unique_vals": 0
+      },
+      "sost": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 5
+      },
+      "pe№": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 141
+      },
+      "tvih": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 115
+      },
+      "tvihmarsrut": {
+        "total": 2065,
+        "non_null": 2060,
+        "unique_vals": 105
+      },
+      "kpvih": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 18
+      },
+      "tzah": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 157
+      },
+      "tend": {
+        "total": 2065,
+        "non_null": 2060,
+        "unique_vals": 144
+      },
+      "kpzah": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 18
+      },
+      "tob1": {
+        "total": 2065,
+        "non_null": 2051,
+        "unique_vals": 63
+      },
+      "tob2": {
+        "total": 2065,
+        "non_null": 1942,
+        "unique_vals": 47
+      },
+      "putlist№": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 2057
+      },
+      "den_nedeli": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 11
+      },
+      "data_day": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 11
+      },
+      "priznak": {
+        "total": 2065,
+        "non_null": 0,
+        "unique_vals": 0
+      },
+      "tipvipusk": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 5
+      },
+      "mestootst": {
+        "total": 2065,
+        "non_null": 156,
+        "unique_vals": 15
+      },
+      "tna4otst": {
+        "total": 2065,
+        "non_null": 156,
+        "unique_vals": 19
+      },
+      "tkonotst": {
+        "total": 2065,
+        "non_null": 156,
+        "unique_vals": 16
+      },
+      "data_file": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 1
+      },
+      "size_file": {
+        "total": 2065,
+        "non_null": 795,
+        "unique_vals": 1
+      },
+      "print": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 1
+      },
+      "tPodgotovkaVod": {
+        "total": 2065,
+        "non_null": 2060,
+        "unique_vals": 2
+      },
+      "tPodgotovkaKon": {
+        "total": 2065,
+        "non_null": 1270,
+        "unique_vals": 3
+      },
+      "tSda4aVod": {
+        "total": 2065,
+        "non_null": 2060,
+        "unique_vals": 2
+      },
+      "tSda4aKon": {
+        "total": 2065,
+        "non_null": 1270,
+        "unique_vals": 1
+      },
+      "tVihdepoVod": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 115
+      },
+      "tVihdepoKon": {
+        "total": 2065,
+        "non_null": 1276,
+        "unique_vals": 94
+      },
+      "tZahdepoVod": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 158
+      },
+      "tZahdepoKon": {
+        "total": 2065,
+        "non_null": 1276,
+        "unique_vals": 132
+      },
+      "Soobhenie": {
+        "total": 2065,
+        "non_null": 6,
+        "unique_vals": 5
+      },
+      "key": {
+        "error": "Cannot analyze field"
+      },
+      "del": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 1
+      },
+      "zaprv": {
+        "total": 2065,
+        "non_null": 2064,
+        "unique_vals": 9
+      },
+      "zaprFakt": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 1
+      },
+      "ZaprAdr": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 3
+      },
+      "fl1": {
+        "total": 2065,
+        "non_null": 2065,
+        "unique_vals": 1
+      }
+    }
+  },
+  "enhanced_field_mapping": {
+    "field_mapping": {
+      "key": {
+        "web_field": "id",
+        "description": "Уникальный ID записи",
+        "type": "primary_key"
+      },
+      "data_day": {
+        "web_field": "assignment_date",
+        "description": "Дата наряда",
+        "type": "date"
+      },
+      "marshrut": {
+        "web_field": "route_number",
+        "description": "Номер маршрута",
+        "type": "route_info"
+      },
+      "vipusk": {
+        "web_field": "brigade",
+        "description": "Бригада/Выпуск",
+        "type": "route_info"
+      },
+      "smena": {
+        "web_field": "shift",
+        "description": "Смена",
+        "type": "shift_info"
+      },
+      "tabvoditel": {
+        "web_field": "driver_tab_number",
+        "description": "Табельный номер водителя",
+        "type": "personnel"
+      },
+      "fiovoditel": {
+        "web_field": "driver_name",
+        "description": "ФИО водителя",
+        "type": "personnel"
+      },
+      "tabconduktor": {
+        "web_field": "conductor_tab_number",
+        "description": "Табельный номер кондуктора",
+        "type": "personnel"
+      },
+      "fioconduktor": {
+        "web_field": "conductor_name",
+        "description": "ФИО кондуктора",
+        "type": "personnel"
+      },
+      "pe№": {
+        "web_field": "vehicle_number",
+        "description": "Номер подвижного состава",
+        "type": "vehicle"
+      },
+      "putlist№": {
+        "web_field": "waybill_number",
+        "description": "Номер путевого листа",
+        "type": "documents"
+      },
+      "tvih": {
+        "web_field": "departure_time",
+        "description": "Время выхода",
+        "type": "schedule"
+      },
+      "tzah": {
+        "web_field": "arrival_time",
+        "description": "Время захода",
+        "type": "schedule"
+      },
+      "ZaprAdr": {
+        "web_field": "fuel_address",
+        "description": "Адрес заправки",
+        "type": "logistics"
+      },
+      "kpvih": {
+        "web_field": "route_endpoint",
+        "description": "Конечная остановка",
+        "type": "route_info"
+      },
+      "tipvipusk": {
+        "web_field": "route_type",
+        "description": "Тип выпуска",
+        "type": "route_info"
+      }
+    },
+    "view_configurations": {
+      "simple": {
+        "description": "Простой вид - основные поля",
+        "fields": [
+          "route_number",
+          "shift",
+          "driver_name",
+          "vehicle_number",
+          "departure_time",
+          "arrival_time",
+          "status"
+        ]
+      },
+      "extended": {
+        "description": "Расширенный вид - детальная информация",
+        "fields": [
+          "route_number",
+          "brigade",
+          "shift",
+          "driver_tab_number",
+          "driver_name",
+          "conductor_name",
+          "vehicle_number",
+          "departure_time",
+          "arrival_time",
+          "waybill_number",
+          "fuel_address",
+          "route_endpoint",
+          "status"
+        ]
+      },
+      "full_ms_access": {
+        "description": "Полный вид MS Access - все поля",
+        "fields": [
+          "key",
+          "data_day",
+          "marshrut",
+          "vipusk",
+          "smena",
+          "tabvoditel",
+          "fiovoditel",
+          "tabconduktor",
+          "fioconduktor",
+          "pe№",
+          "putlist№",
+          "tvih",
+          "tzah",
+          "ZaprAdr",
+          "kpvih",
+          "tipvipusk"
+        ]
+      }
+    },
+    "total_fields": 16
+  },
+  "recommendations": [
+    "✅ Поля БД уже исправлены (pe№, putlist№)",
+    "✅ Simple View уже улучшен",
+    "📝 Рассмотрите добавление всех найденных полей в Full View",
+    "🔧 Проверьте кодировку украинских символов",
+    "📊 Добавьте статистику по данным в интерфейс",
+    "🗂️ Рассмотрите группировку полей по категориям"
+  ]
+}

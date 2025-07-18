@@ -2,13 +2,13 @@
   <div class="not-found">
     <div class="not-found-content">
       <div class="error-icon">
-        <i class="fas fa-exclamation-triangle"></i>
+        <i class="fas fa-exclamation-triangle" />
       </div>
       <h1>404</h1>
       <h2>Сторінку не знайдено</h2>
       <p>Вибачте, але сторінка, яку ви шукаєте, не існує.</p>
       <router-link to="/dashboard" class="back-btn">
-        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-arrow-left" />
         Повернутися на головну
       </router-link>
     </div>
@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-// Простой компонент, не требует логики
+// Simple component, no logic required
 </script>
 
 <style scoped>

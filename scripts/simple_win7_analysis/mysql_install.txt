@@ -1,0 +1,23 @@
+=== MYSQL CLIENT INSTALLATION === 
+Analysis Date: 11.07.2025 12:54:36,75 
+ 
+Для полного анализа БД рекомендуется установить MySQL клиент: 
+ 
+ВАРИАНТ 1: XAMPP (рекомендуется для Windows 7) 
+1. Скачайте XAMPP с https://www.apachefriends.org/ 
+2. Установите (включает MySQL клиент) 
+3. MySQL будет доступен в C:\xampp\mysql\bin\mysql.exe 
+ 
+ВАРИАНТ 2: Standalone MySQL Client 
+1. Скачайте MySQL Community Server 
+2. Установите только клиентские инструменты 
+ 
+ВАРИАНТ 3: Portable MySQL 
+1. Скачайте portable версию MySQL 
+2. Распакуйте в любую папку 
+3. Используйте mysql.exe из папки bin 
+ 
+ВАРИАНТ 4: Веб-интерфейс 
+1. Установите phpMyAdmin 
+2. Подключитесь к удаленной БД через веб 
+ 

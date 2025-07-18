@@ -1,0 +1,32 @@
+=== READY-TO-USE COMMANDS === 
+Analysis Date: 11.07.2025 12:54:36,24 
+ 
+Если у вас есть MySQL клиент, выполните: 
+ 
+mysql -h 91.222.248.216 -P 61315 -u khtrm_remote -p"KhTRM_2025!" 
+ 
+После подключения выполните эти команды по очереди: 
+ 
+USE saltdepoavt_; 
+ 
+-- Структура основной таблицы 
+DESCRIBE zanaradka; 
+ 
+-- Количество записей 
+SELECT COUNT(*) as total_records FROM zanaradka; 
+ 
+-- Доступные маршруты 
+SELECT DISTINCT marshrut FROM zanaradka ORDER BY marshrut LIMIT 15; 
+ 
+-- Доступные смены 
+SELECT DISTINCT smena FROM zanaradka ORDER BY smena; 
+ 
+-- Пример данных для даты 2025-07-07 
+SELECT marshrut, smena, fiovoditel, `pe№`, tvih, tzah FROM zanaradka WHERE data_day = '2025-07-07' LIMIT 10; 
+ 
+-- Проверяем поле номера ПС 
+SELECT DISTINCT `pe№` FROM zanaradka WHERE `pe№` IS NOT NULL AND `pe№` != '' LIMIT 10; 
+ 
+-- Проверяем поле путевого листа 
+SELECT DISTINCT `putlist№` FROM zanaradka WHERE `putlist№` IS NOT NULL AND `putlist№` != '' LIMIT 10; 
+ 

@@ -1,23 +1,22 @@
 <template>
   <div class="notifications-container">
-    <!-- Toast notifications будут автоматически отображаться здесь -->
+    <!-- Toast notifications will be automatically displayed here -->
   </div>
 </template>
 
-<script setup>
-import { onMounted } from "vue";
-import { useToast } from "vue-toastification";
+<script lang="ts">
+import { defineComponent } from 'vue';
 
-// Инициализация toast системы
-const toast = useToast();
+// This component serves as a container for vue-toastification
+// Toast notifications are automatically displayed through the useNotifications composable
 
-onMounted(() => {
-  console.log("GlobalNotifications component mounted");
+export default defineComponent({
+  name: 'GlobalNotifications'
 });
 </script>
 
 <style scoped>
 .notifications-container {
-  /* Стили для контейнера уведомлений, если нужны */
+  /* Styles for notifications container if needed */
 }
 </style>

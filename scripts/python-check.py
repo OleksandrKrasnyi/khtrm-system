@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Скрипт для проверки качества Python кода
-Аналог frontend-check для Python
+Script for checking Python code quality
+Python equivalent of frontend-check
 """
 
 import os
@@ -10,7 +10,7 @@ import sys
 
 
 def run_command(cmd, description):
-    """Запуск команды с выводом результата"""
+    """Run command and display output"""
     print(f"\n🔍 {description}")
     print("=" * 60)
 
@@ -31,61 +31,56 @@ def run_command(cmd, description):
 
         return result.returncode == 0
     except Exception as e:
-        print(f"❌ Ошибка выполнения команды: {e}")
+        print(f"❌ Command execution error: {e}")
         return False
 
 
 def main():
-    """Основная функция проверки"""
-    print("🐍 ПРОВЕРКА КАЧЕСТВА PYTHON КОДА")
+    """Main check function"""
+    print("🐍 PYTHON CODE QUALITY CHECK")
     print("=" * 60)
 
-    # Проверяем, что мы в корневой папке проекта
+    # Check if we're in the project root
     if not os.path.exists("pyproject.toml"):
-        print(
-            "❌ Не найден pyproject.toml. Запустите скрипт из корневой папки проекта."
-        )
+        print("❌ pyproject.toml not found. Run the script from the project root.")
         sys.exit(1)
 
     success = True
 
-    # 1. Ruff - линтинг
-    print("\n📋 1. RUFF ЛИНТИНГ")
-    ruff_success = run_command(
-        "uv run ruff check", "Проверка качества кода с помощью ruff"
-    )
+    # 1. Ruff - linting
+    print("\n📋 1. RUFF LINTING")
+    ruff_success = run_command("uv run ruff check", "Checking code quality with ruff")
     if not ruff_success:
         success = False
-        print("❌ Найдены проблемы качества кода")
+        print("❌ Code quality issues found")
 
-        # Показываем статистику
-        print("\n📊 Статистика ошибок:")
-        run_command("uv run ruff check --statistics", "Статистика по типам ошибок")
+        # Show statistics
+        print("\n📊 Error statistics:")
+        run_command("uv run ruff check --statistics", "Statistics by error type")
     else:
-        print("✅ Код соответствует стандартам качества!")
+        print("✅ Code meets quality standards!")
 
-    # 2. MyPy - проверка типов
-    print("\n🔍 2. MYPY - ПРОВЕРКА ТИПОВ")
+    # 2. MyPy - type checking
+    print("\n🔍 2. MYPY - TYPE CHECKING")
     mypy_success = run_command(
         "uv run mypy --config-file pyproject.toml backend/",
-        "Проверка типов с помощью mypy",
+        "Type checking with mypy",
     )
     if not mypy_success:
         success = False
-        print("❌ Найдены проблемы с типизацией")
+        print("❌ Type checking issues found")
     else:
-        print("✅ Типизация корректна!")
+        print("✅ Type checking passed!")
 
-    # 3. Итоговый результат
+    # 3. Final result
     print("\n" + "=" * 60)
     if success:
-        print("🎉 ВСЕ ПРОВЕРКИ ПРОЙДЕНЫ!")
-        print("✅ Код готов к коммиту")
+        print("🎉 ALL CHECKS PASSED!")
+        print("✅ Code is ready for production")
     else:
-        print("❌ НАЙДЕНЫ ПРОБЛЕМЫ")
-        print(
-            "🔧 Запустите 'python scripts/python-fix.py' для автоматического исправления"
-        )
+        print("❌ ISSUES FOUND")
+        print("🔧 Run 'python scripts/python-fix.py' to auto-fix issues")
+        print("📖 Or run 'uv run ruff check --fix' manually")
 
     return 0 if success else 1
 

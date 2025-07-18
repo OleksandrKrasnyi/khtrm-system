@@ -32,7 +32,7 @@
         </div>
 
         <button type="submit" :disabled="isLoading" class="login-btn">
-          <i v-if="isLoading" class="fas fa-spinner fa-spin"></i>
+          <i v-if="isLoading" class="fas fa-spinner fa-spin" />
           {{ isLoading ? "Входження..." : "Увійти" }}
         </button>
       </form>
@@ -57,23 +57,24 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import { useAuth } from "../composables/useAuth";
 import { useNotifications } from "../composables/useNotifications";
+import type { LoginCredentials } from "@/types";
 
 const router = useRouter();
 const { login } = useAuth();
 const { showSuccess, showError } = useNotifications();
 
-const isLoading = ref(false);
-const credentials = ref({
+const isLoading = ref<boolean>(false);
+const credentials = ref<LoginCredentials>({
   username: "",
   password: "",
 });
 
-const handleLogin = async () => {
+const handleLogin = async (): Promise<void> => {
   if (!credentials.value.username || !credentials.value.password) {
     showError("Будь ласка, заповніть всі поля");
     return;

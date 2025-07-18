@@ -1,0 +1,12 @@
+=== MYSQL CLIENT SEARCH === 
+Analysis Date: 11.07.2025 12:54:36,13 
+ 
+Ищем mysql.exe в стандартных местах: 
+❌ НЕ НАЙДЕН: C:\Program Files\MySQL\MySQL Server 5.7\bin\mysql.exe 
+❌ НЕ НАЙДЕН: C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe 
+❌ НЕ НАЙДЕН: C:\xampp\mysql\bin\mysql.exe 
+❌ НЕ НАЙДЕН: D:\xampp\mysql\bin\mysql.exe 
+ 
+'mysql' is not recognized as an internal or external command,
+operable program or batch file.
+❌ MySQL не найден в PATH 

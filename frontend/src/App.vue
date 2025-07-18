@@ -9,7 +9,7 @@
       <header v-if="!isAuthenticated" class="app-header">
         <div class="container">
           <h1 class="app-title">
-            <i class="fas fa-truck"></i>
+            <i class="fas fa-bus" />
             KHTRM - Система управління транспортом
           </h1>
           <p class="app-subtitle">м. Харків</p>
@@ -20,13 +20,13 @@
       <nav v-if="isAuthenticated" class="app-nav">
         <div class="container">
           <div class="nav-brand">
-            <i class="fas fa-truck"></i>
+            <i class="fas fa-bus" />
             <span>KHTRM</span>
           </div>
 
           <div class="nav-menu">
             <router-link to="/dashboard" class="nav-link">
-              <i class="fas fa-tachometer-alt"></i>
+              <i class="fas fa-tachometer-alt" />
               Головна
             </router-link>
 
@@ -34,7 +34,7 @@
             <div v-if="userRole" class="nav-user">
               <span class="user-role">{{ userRole.display_name_uk }}</span>
               <button class="logout-btn" @click="logout">
-                <i class="fas fa-sign-out-alt"></i>
+                <i class="fas fa-sign-out-alt" />
                 Вихід
               </button>
             </div>
@@ -59,25 +59,27 @@
   </div>
 </template>
 
-<script setup>
-import { computed, onMounted } from "vue";
+<script setup lang="ts">
+import { onMounted } from "vue";
 import { useRouter } from "vue-router";
 import GlobalNotifications from "./components/GlobalNotifications.vue";
 import { useAuth } from "./composables/useAuth";
 import { useNotifications } from "./composables/useNotifications";
 
 const router = useRouter();
-const { isAuthenticated, user, userRole, logout: authLogout } = useAuth();
+const { isAuthenticated, userRole, logout: authLogout } = useAuth();
 const { showSuccess } = useNotifications();
 
 // Check authentication on app mount
-onMounted(() => {
-  // Here we can add session recovery logic
-  console.log("App mounted, authentication status:", isAuthenticated.value);
+onMounted(async () => {
+  // If user is not authenticated and not on login page, redirect to login
+  if (!isAuthenticated.value && router.currentRoute.value.path !== "/login") {
+    await router.push("/login");
+  }
 });
 
 // Handle logout
-const logout = async () => {
+const logout = async (): Promise<void> => {
   try {
     await authLogout();
     showSuccess("Ви успішно вийшли з системи");

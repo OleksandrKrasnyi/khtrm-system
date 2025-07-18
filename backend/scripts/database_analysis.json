@@ -1,0 +1,6047 @@
+{
+  "const": {
+    "columns": [
+      {
+        "name": "Con",
+        "type": "varchar(13)",
+        "null": false,
+        "key": "PRI",
+        "default": "",
+        "extra": ""
+      },
+      {
+        "name": "Zna4",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Opisanie",
+        "type": "varchar(255)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 19,
+    "column_names": [
+      "Con",
+      "Zna4",
+      "Opisanie"
+    ],
+    "sample_data": [
+      {
+        "Con": "1",
+        "Zna4": "151",
+        "Opisanie": "План январь"
+      },
+      {
+        "Con": "10",
+        "Zna4": "159",
+        "Opisanie": "План октябрь"
+      },
+      {
+        "Con": "11",
+        "Zna4": "176",
+        "Opisanie": "План ноябрь"
+      },
+      {
+        "Con": "12",
+        "Zna4": "176",
+        "Opisanie": "План декабрь"
+      },
+      {
+        "Con": "2",
+        "Zna4": "168",
+        "Opisanie": "План февраль"
+      }
+    ]
+  },
+  "dvigenietalon": {
+    "columns": [
+      {
+        "name": "Key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "SeriaCifr",
+        "type": "varchar(20)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "SeriaBukv",
+        "type": "varchar(15)",
+        "null": true,
+        "key": "",
+        "default": "",
+        "extra": ""
+      },
+      {
+        "name": "№UpOut",
+        "type": "int(9)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "№DownOut",
+        "type": "int(9)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "№DownIn",
+        "type": "int(9)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "№UpIn",
+        "type": "int(9)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "Klu4",
+        "type": "smallint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Cena",
+        "type": "double",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "Bul",
+        "type": "int(11)",
+        "null": true,
+        "key": "MUL",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "putlist№",
+        "type": "varchar(15)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "blok",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      }
+    ],
+    "count": 3493,
+    "column_names": [
+      "Key",
+      "SeriaCifr",
+      "SeriaBukv",
+      "№UpOut",
+      "№DownOut",
+      "№DownIn",
+      "№UpIn",
+      "Klu4",
+      "Cena",
+      "Bul",
+      "putlist№",
+      "blok"
+    ],
+    "sample_data": [
+      {
+        "Key": 175904,
+        "SeriaCifr": null,
+        "SeriaBukv": "KA",
+        "№UpOut": 16,
+        "№DownOut": null,
+        "№DownIn": null,
+        "№UpIn": 3,
+        "Klu4": 1,
+        "Cena": 50.0,
+        "Bul": 6,
+        "putlist№": null,
+        "blok": 0
+      },
+      {
+        "Key": 175905,
+        "SeriaCifr": null,
+        "SeriaBukv": "KA",
+        "№UpOut": 16,
+        "№DownOut": null,
+        "№DownIn": null,
+        "№UpIn": 4,
+        "Klu4": 2,
+        "Cena": 20.0,
+        "Bul": 6,
+        "putlist№": null,
+        "blok": 0
+      }
+    ]
+  },
+  "dvigenievagon": {
+    "columns": [
+      {
+        "name": "bul",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "status",
+        "type": "varchar(15)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kniga№",
+        "type": "mediumint(9)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tab№",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tipsmeni",
+        "type": "smallint(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "vipusk",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "№marshruta",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "nn",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "data",
+        "type": "date",
+        "null": true,
+        "key": "MUL",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "putlist№",
+        "type": "varchar(15)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "zakrit",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "blok",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "clock",
+        "type": "time",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "FIO",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Prim",
+        "type": "varchar(330)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Nved",
+        "type": "varchar(15)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Prim1",
+        "type": "varchar(330)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "ff",
+        "type": "tinyint(2)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      }
+    ],
+    "count": 1647,
+    "column_names": [
+      "bul",
+      "status",
+      "kniga№",
+      "tab№",
+      "tipsmeni",
+      "vipusk",
+      "№marshruta",
+      "nn",
+      "data",
+      "putlist№",
+      "zakrit",
+      "blok",
+      "clock",
+      "FIO",
+      "Prim",
+      "Nved",
+      "Prim1",
+      "ff"
+    ],
+    "sample_data": [
+      {
+        "bul": 6,
+        "status": null,
+        "kniga№": null,
+        "tab№": null,
+        "tipsmeni": null,
+        "vipusk": null,
+        "№marshruta": null,
+        "nn": "0",
+        "data": "2023-06-28",
+        "putlist№": "KA280623",
+        "zakrit": 0,
+        "blok": -1,
+        "clock": "15:47:05",
+        "FIO": "Веринская, 28а",
+        "Prim": "38шт. по  10л.   16шт. по  20л.   16шт. по  50л.",
+        "Nved": null,
+        "Prim1": "1шт. по  10л.   4шт. по  20л.   3шт. по  50л.",
+        "ff": 0
+      },
+      {
+        "bul": 7,
+        "status": null,
+        "kniga№": null,
+        "tab№": null,
+        "tipsmeni": null,
+        "vipusk": null,
+        "№marshruta": null,
+        "nn": "0",
+        "data": "2023-06-28",
+        "putlist№": "ЗС280623",
+        "zakrit": 0,
+        "blok": -1,
+        "clock": "15:48:06",
+        "FIO": "Л.Малой, 36а",
+        "Prim": "160шт. по  10л.",
+        "Nved": null,
+        "Prim1": "65шт. по  10л.",
+        "ff": 0
+      }
+    ]
+  },
+  "grafik": {
+    "columns": [
+      {
+        "name": "marshrut",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "vipusk",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "smena",
+        "type": "varchar(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tabvoditelZ",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tabvoditel",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "fiovoditel",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tabinstr",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "fioinstr",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tabconduktorZ",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tabconduktor",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "fioconduktor",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "sost",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "pe№",
+        "type": "int(6)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tvih",
+        "type": "char(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tvihmarsrut",
+        "type": "char(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kpvih",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tzah",
+        "type": "char(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tend",
+        "type": "char(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kpzah",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tob1",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tob2",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "putlist№",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "den_nedeli",
+        "type": "varchar(15)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "data_day",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "priznak",
+        "type": "varchar(3)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tipvipusk",
+        "type": "varchar(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "mestootst",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tna4otst",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tkonotst",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "data_file",
+        "type": "varchar(20)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "size_file",
+        "type": "varchar(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "print",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tPodgotovkaVod",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tPodgotovkaKon",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tSda4aVod",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tSda4aKon",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tVihdepoVod",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tVihdepoKon",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tZahdepoVod",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tZahdepoKon",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Soobhenie",
+        "type": "varchar(255)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "del",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "zaprv",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "zaprFakt",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "ZaprAdr",
+        "type": "varchar(30)",
+        "null": true,
+        "key": "",
+        "default": "-",
+        "extra": ""
+      }
+    ],
+    "count": 0,
+    "column_names": [
+      "marshrut",
+      "vipusk",
+      "smena",
+      "tabvoditelZ",
+      "tabvoditel",
+      "fiovoditel",
+      "tabinstr",
+      "fioinstr",
+      "tabconduktorZ",
+      "tabconduktor",
+      "fioconduktor",
+      "sost",
+      "pe№",
+      "tvih",
+      "tvihmarsrut",
+      "kpvih",
+      "tzah",
+      "tend",
+      "kpzah",
+      "tob1",
+      "tob2",
+      "putlist№",
+      "den_nedeli",
+      "data_day",
+      "priznak",
+      "tipvipusk",
+      "mestootst",
+      "tna4otst",
+      "tkonotst",
+      "data_file",
+      "size_file",
+      "print",
+      "tPodgotovkaVod",
+      "tPodgotovkaKon",
+      "tSda4aVod",
+      "tSda4aKon",
+      "tVihdepoVod",
+      "tVihdepoKon",
+      "tZahdepoVod",
+      "tZahdepoKon",
+      "Soobhenie",
+      "key",
+      "del",
+      "zaprv",
+      "zaprFakt",
+      "ZaprAdr"
+    ]
+  },
+  "karkaskarkmd7": {
+    "columns": [
+      {
+        "name": "key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "marshrut",
+        "type": "tinyint(2)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "brig№",
+        "type": "varchar(3)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kodVoditel",
+        "type": "varchar(1)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "chac_kon",
+        "type": "float(6,0)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "chac_vod",
+        "type": "float(6,0)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "sost",
+        "type": "tinyint(1)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "name_vod",
+        "type": "varchar(20)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tab№",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "pe№",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "den_nedeli",
+        "type": "varchar(15)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "vipusk",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "smena",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "priznak",
+        "type": "varchar(3)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "data_file",
+        "type": "varchar(20)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "data_day",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 0,
+    "column_names": [
+      "key",
+      "marshrut",
+      "brig№",
+      "kodVoditel",
+      "chac_kon",
+      "chac_vod",
+      "sost",
+      "name_vod",
+      "tab№",
+      "pe№",
+      "den_nedeli",
+      "vipusk",
+      "smena",
+      "priznak",
+      "data_file",
+      "data_day"
+    ]
+  },
+  "norma_chas": {
+    "columns": [
+      {
+        "name": "Data",
+        "type": "date",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "norma_chas",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "norma_day",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 72,
+    "column_names": [
+      "Data",
+      "norma_chas",
+      "norma_day"
+    ],
+    "sample_data": [
+      {
+        "Data": "2020-01-01",
+        "norma_chas": 167,
+        "norma_day": 21
+      },
+      {
+        "Data": "2020-02-01",
+        "norma_chas": 160,
+        "norma_day": 20
+      },
+      {
+        "Data": "2020-03-01",
+        "norma_chas": 168,
+        "norma_day": 21
+      },
+      {
+        "Data": "2020-04-01",
+        "norma_chas": 167,
+        "norma_day": 21
+      },
+      {
+        "Data": "2020-05-01",
+        "norma_chas": 151,
+        "norma_day": 19
+      }
+    ]
+  },
+  "norma_chas_day": {
+    "columns": [
+      {
+        "name": "Data",
+        "type": "date",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "norma_chas",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 1284,
+    "column_names": [
+      "Data",
+      "norma_chas"
+    ],
+    "sample_data": [
+      {
+        "Data": "2021-01-04",
+        "norma_chas": 8
+      },
+      {
+        "Data": "2021-01-05",
+        "norma_chas": 8
+      }
+    ]
+  },
+  "norma_chas_grafik": {
+    "columns": [
+      {
+        "name": "Data",
+        "type": "date",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "norma_chas",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "norma_day",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 0,
+    "column_names": [
+      "Data",
+      "norma_chas",
+      "norma_day"
+    ]
+  },
+  "obslavt": {
+    "columns": [
+      {
+        "name": "Pe",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Dat",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Probeg",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Index",
+        "type": "int(13)",
+        "null": false,
+        "key": "PRI",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "TipTO",
+        "type": "varchar(3)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Print",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "DatPrint",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Krit",
+        "type": "varchar(3)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Ndocum",
+        "type": "varchar(30)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "STO",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 3004,
+    "column_names": [
+      "Pe",
+      "Dat",
+      "Probeg",
+      "Index",
+      "TipTO",
+      "Print",
+      "DatPrint",
+      "Krit",
+      "Ndocum",
+      "STO"
+    ],
+    "sample_data": [
+      {
+        "Pe": 0,
+        "Dat": "2021-10-01",
+        "Probeg": 0,
+        "Index": 0,
+        "TipTO": "TO0",
+        "Print": 0,
+        "DatPrint": null,
+        "Krit": "TO",
+        "Ndocum": null,
+        "STO": "n/a"
+      },
+      {
+        "Pe": 1111,
+        "Dat": "2021-10-01",
+        "Probeg": 0,
+        "Index": 1111,
+        "TipTO": "TO0",
+        "Print": 0,
+        "DatPrint": null,
+        "Krit": "TO",
+        "Ndocum": null,
+        "STO": "n/a"
+      }
+    ]
+  },
+  "obslpersonal": {
+    "columns": [
+      {
+        "name": "Tab№",
+        "type": "int(11)",
+        "null": false,
+        "key": "MUL",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "FIO",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Priznak",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "Blok",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "DatStrah",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Index",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      }
+    ],
+    "count": 571,
+    "column_names": [
+      "Tab№",
+      "FIO",
+      "Priznak",
+      "Blok",
+      "DatStrah",
+      "Index"
+    ],
+    "sample_data": [
+      {
+        "Tab№": 14,
+        "FIO": "Славський Юрій Володимирович (осн.)",
+        "Priznak": 0,
+        "Blok": 0,
+        "DatStrah": "2024-02-07",
+        "Index": 2
+      },
+      {
+        "Tab№": 3617,
+        "FIO": "Меркушев Анатолій Олексійович (осн.)",
+        "Priznak": 0,
+        "Blok": 0,
+        "DatStrah": "2023-01-01",
+        "Index": 4
+      }
+    ]
+  },
+  "obsltab": {
+    "columns": [
+      {
+        "name": "Pe",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Dat",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Probeg",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Index",
+        "type": "int(13)",
+        "null": false,
+        "key": "PRI",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "TipTO",
+        "type": "varchar(3)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Print",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "DatPrint",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Krit",
+        "type": "varchar(3)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Ndocum",
+        "type": "varchar(30)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "STO",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 1233,
+    "column_names": [
+      "Pe",
+      "Dat",
+      "Probeg",
+      "Index",
+      "TipTO",
+      "Print",
+      "DatPrint",
+      "Krit",
+      "Ndocum",
+      "STO"
+    ],
+    "sample_data": [
+      {
+        "Pe": 0,
+        "Dat": "2021-10-01",
+        "Probeg": 0,
+        "Index": 0,
+        "TipTO": "TO0",
+        "Print": 0,
+        "DatPrint": null,
+        "Krit": "TO",
+        "Ndocum": null,
+        "STO": "n/a"
+      },
+      {
+        "Pe": 1188,
+        "Dat": "2021-10-01",
+        "Probeg": 0,
+        "Index": 1188,
+        "TipTO": "TO0",
+        "Print": 0,
+        "DatPrint": null,
+        "Krit": "TO",
+        "Ndocum": null,
+        "STO": "n/a"
+      }
+    ]
+  },
+  "prihtopl": {
+    "columns": [
+      {
+        "name": "Tip",
+        "type": "varchar(3)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Dat",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Obm",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "Key",
+        "type": "varchar(10)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "prim",
+        "type": "varchar(200)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 235,
+    "column_names": [
+      "Tip",
+      "Dat",
+      "Obm",
+      "Key",
+      "prim"
+    ],
+    "sample_data": [
+      {
+        "Tip": "BT",
+        "Dat": "2024-10-10",
+        "Obm": 0,
+        "Key": "BT101024",
+        "prim": null
+      },
+      {
+        "Tip": "BT",
+        "Dat": "2024-03-01",
+        "Obm": 0,
+        "Key": "BT10324",
+        "prim": null
+      }
+    ]
+  },
+  "raspisaniersp": {
+    "columns": [
+      {
+        "name": "marshrut",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "vipusk",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "sost",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tipvipusk",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tvih1",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kpvih1",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tob1",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tzah1",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kpzah1",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tvih2",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kpvih2",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tob2",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tzah2",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kpzah2",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tsm1",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tsm2",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "km",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "time",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "pe№",
+        "type": "smallint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tvihdepo",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tzahdepo",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "datafile",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "smena",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 0,
+    "column_names": [
+      "marshrut",
+      "vipusk",
+      "sost",
+      "tipvipusk",
+      "tvih1",
+      "kpvih1",
+      "tob1",
+      "tzah1",
+      "kpzah1",
+      "tvih2",
+      "kpvih2",
+      "tob2",
+      "tzah2",
+      "kpzah2",
+      "tsm1",
+      "tsm2",
+      "km",
+      "time",
+      "pe№",
+      "tvihdepo",
+      "tzahdepo",
+      "key",
+      "datafile",
+      "smena"
+    ]
+  },
+  "sprbul": {
+    "columns": [
+      {
+        "name": "bul",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "DataInput",
+        "type": "datetime",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "user",
+        "type": "varchar(30)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 1888,
+    "column_names": [
+      "bul",
+      "DataInput",
+      "user"
+    ],
+    "sample_data": [
+      {
+        "bul": 1,
+        "DataInput": "2023-06-01 00:00:00",
+        "user": null
+      },
+      {
+        "bul": 2,
+        "DataInput": "2023-06-27 00:00:00",
+        "user": null
+      }
+    ]
+  },
+  "sprmarshrut": {
+    "columns": [
+      {
+        "name": "Marshrut",
+        "type": "int(6)",
+        "null": true,
+        "key": "MUL",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Vipusk",
+        "type": "tinyint(15)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "ZaprAdr",
+        "type": "varchar(30)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      }
+    ],
+    "count": 296,
+    "column_names": [
+      "Marshrut",
+      "Vipusk",
+      "ZaprAdr",
+      "Key"
+    ],
+    "sample_data": [
+      {
+        "Marshrut": 7,
+        "Vipusk": 1,
+        "ZaprAdr": "Плехановская 85/87",
+        "Key": 9
+      },
+      {
+        "Marshrut": 21,
+        "Vipusk": 1,
+        "ZaprAdr": "Плехановская 85/87",
+        "Key": 10
+      }
+    ]
+  },
+  "sprparametr": {
+    "columns": [
+      {
+        "name": "ParN",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "ParName",
+        "type": "varchar(150)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Nkod",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Probeg",
+        "type": "mediumint(9)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "Vid",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "Index",
+        "type": "mediumint(9)",
+        "null": false,
+        "key": "PRI",
+        "default": "0",
+        "extra": ""
+      }
+    ],
+    "count": 89,
+    "column_names": [
+      "ParN",
+      "ParName",
+      "Nkod",
+      "Probeg",
+      "Vid",
+      "Index"
+    ],
+    "sample_data": [
+      {
+        "ParN": 1,
+        "ParName": "Масло двигуна",
+        "Nkod": 1,
+        "Probeg": 15000,
+        "Vid": 0,
+        "Index": 10001
+      },
+      {
+        "ParN": 1,
+        "ParName": "Масло двигуна",
+        "Nkod": 2,
+        "Probeg": 20000,
+        "Vid": 0,
+        "Index": 10002
+      },
+      {
+        "ParN": 2,
+        "ParName": "Масляний фільтр двигуна",
+        "Nkod": 1,
+        "Probeg": 15000,
+        "Vid": 0,
+        "Index": 20001
+      },
+      {
+        "ParN": 2,
+        "ParName": "Масляний фільтр двигуна",
+        "Nkod": 2,
+        "Probeg": 20000,
+        "Vid": 0,
+        "Index": 20002
+      },
+      {
+        "ParN": 3,
+        "ParName": "Сепаратор масляного фільтра двигуна",
+        "Nkod": 1,
+        "Probeg": 1000,
+        "Vid": 0,
+        "Index": 30001
+      }
+    ]
+  },
+  "sprpe": {
+    "columns": [
+      {
+        "name": "Pe",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "kodPe",
+        "type": "varchar(30)",
+        "null": false,
+        "key": "",
+        "default": "",
+        "extra": ""
+      },
+      {
+        "name": "PeTemp",
+        "type": "varchar(8)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Nkod",
+        "type": "smallint(2)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Isp",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "Blok",
+        "type": "smallint(2)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      }
+    ],
+    "count": 218,
+    "column_names": [
+      "Pe",
+      "kodPe",
+      "PeTemp",
+      "Nkod",
+      "Isp",
+      "Blok"
+    ],
+    "sample_data": [
+      {
+        "Pe": 0,
+        "kodPe": "na",
+        "PeTemp": "na",
+        "Nkod": 1,
+        "Isp": 0,
+        "Blok": 0
+      },
+      {
+        "Pe": 1111,
+        "kodPe": "I-VAN A07A",
+        "PeTemp": "АХ1446АА",
+        "Nkod": 2,
+        "Isp": 0,
+        "Blok": 0
+      }
+    ]
+  },
+  "sprpersonal": {
+    "columns": [
+      {
+        "name": "1CTab№",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Tab№",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "FIO",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Priznak",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "IPN",
+        "type": "bigint(20)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "Blok",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      }
+    ],
+    "count": 966,
+    "column_names": [
+      "1CTab№",
+      "Tab№",
+      "FIO",
+      "Priznak",
+      "IPN",
+      "Blok"
+    ],
+    "sample_data": [
+      {
+        "1CTab№": "0",
+        "Tab№": 0,
+        "FIO": "na",
+        "Priznak": -1,
+        "IPN": 0,
+        "Blok": 0
+      },
+      {
+        "1CTab№": "СД-0000014",
+        "Tab№": 14,
+        "FIO": "Славський Юрій Володимирович",
+        "Priznak": 0,
+        "IPN": 2550302756,
+        "Blok": 0
+      }
+    ]
+  },
+  "sprpersonaldata": {
+    "columns": [
+      {
+        "name": "DatPr",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "DatUv",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Stat",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Index",
+        "type": "int(11)",
+        "null": true,
+        "key": "MUL",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      }
+    ],
+    "count": 1233,
+    "column_names": [
+      "DatPr",
+      "DatUv",
+      "Stat",
+      "Index",
+      "key"
+    ],
+    "sample_data": [
+      {
+        "DatPr": "2021-07-30",
+        "DatUv": "2023-10-31",
+        "Stat": "Уволен",
+        "Index": 142251,
+        "key": 351713
+      },
+      {
+        "DatPr": "2021-11-27",
+        "DatUv": "2022-08-31",
+        "Stat": "Уволен",
+        "Index": 1202251,
+        "key": 351714
+      }
+    ]
+  },
+  "sprpersonalprof": {
+    "columns": [
+      {
+        "name": "Tab№",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "KodProf",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "KodPodr",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "NaimProf",
+        "type": "varchar(100)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "NaimOtd",
+        "type": "varchar(100)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Index",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": "0",
+        "extra": ""
+      }
+    ],
+    "count": 1001,
+    "column_names": [
+      "Tab№",
+      "KodProf",
+      "KodPodr",
+      "NaimProf",
+      "NaimOtd",
+      "Index"
+    ],
+    "sample_data": [
+      {
+        "Tab№": 0,
+        "KodProf": 225,
+        "KodPodr": 0,
+        "NaimProf": "na",
+        "NaimOtd": "na",
+        "Index": 999
+      },
+      {
+        "Tab№": 14,
+        "KodProf": 225,
+        "KodPodr": 900000023,
+        "NaimProf": "водій автотранспортних засобів (автобус) категорії Д",
+        "NaimOtd": "Основное место работы",
+        "Index": 142251
+      }
+    ]
+  },
+  "sprprazdn": {
+    "columns": [
+      {
+        "name": "Data",
+        "type": "date",
+        "null": false,
+        "key": "PRI",
+        "default": "0000-00-00",
+        "extra": ""
+      }
+    ],
+    "count": 13,
+    "column_names": [
+      "Data"
+    ],
+    "sample_data": [
+      {
+        "Data": "2021-01-01"
+      },
+      {
+        "Data": "2021-01-07"
+      },
+      {
+        "Data": "2021-03-08"
+      },
+      {
+        "Data": "2021-05-01"
+      },
+      {
+        "Data": "2021-05-02"
+      }
+    ]
+  },
+  "sprtabel": {
+    "columns": [
+      {
+        "name": "good",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "ms",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "dni",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "chas",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "gm",
+        "type": "int(20)",
+        "null": false,
+        "key": "PRI",
+        "default": "0",
+        "extra": ""
+      }
+    ],
+    "count": 2,
+    "column_names": [
+      "good",
+      "ms",
+      "dni",
+      "chas",
+      "gm"
+    ],
+    "sample_data": [
+      {
+        "good": 2020,
+        "ms": 3,
+        "dni": 21,
+        "chas": 167,
+        "gm": 2020321
+      },
+      {
+        "good": 2020,
+        "ms": 4,
+        "dni": 22,
+        "chas": 175,
+        "gm": 2020422
+      }
+    ]
+  },
+  "sprtal": {
+    "columns": [
+      {
+        "name": "Key",
+        "type": "int(20)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "DataIn",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Obem",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Stat",
+        "type": "mediumint(2)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "Post",
+        "type": "varchar(2)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "bul",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      }
+    ],
+    "count": 68819,
+    "column_names": [
+      "Key",
+      "DataIn",
+      "Obem",
+      "Stat",
+      "Post",
+      "bul"
+    ],
+    "sample_data": [
+      {
+        "Key": 1396,
+        "DataIn": "2023-06-27",
+        "Obem": 10,
+        "Stat": -1,
+        "Post": "ЗС",
+        "bul": 7
+      },
+      {
+        "Key": 1397,
+        "DataIn": "2023-06-27",
+        "Obem": 10,
+        "Stat": -1,
+        "Post": "ЗС",
+        "bul": 7
+      }
+    ]
+  },
+  "sprtippe": {
+    "columns": [
+      {
+        "name": "sost",
+        "type": "int(2)",
+        "null": false,
+        "key": "PRI",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "opisaniePe",
+        "type": "varchar(15)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oN4pv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oN4zv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oN4pk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oN4zk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oO1pv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oO1pk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oO2pv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oO2pk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDS1pv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDS1pk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDS2pv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDS2pk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDZ1pv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDZ1pk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDZ2pv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDZ2pk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR1linepv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR1linepk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR2linepv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR2linepk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR1Depopv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR1Depopk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR2Depopv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR2Depopk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR1Depozv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR1Depozk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR2Depozv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR2Depozk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oO1zv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oO1zk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oO2zv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oO2zk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDS1zv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDS1zk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDS2zv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDS2zk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDZ1zv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDZ1zk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDZ2zv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oDZ2zk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR1linezv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR1linezk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR2linezv",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "oPR2linezk",
+        "type": "varchar(8)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kodPE",
+        "type": "varchar(2)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 5,
+    "column_names": [
+      "sost",
+      "opisaniePe",
+      "oN4pv",
+      "oN4zv",
+      "oN4pk",
+      "oN4zk",
+      "oO1pv",
+      "oO1pk",
+      "oO2pv",
+      "oO2pk",
+      "oDS1pv",
+      "oDS1pk",
+      "oDS2pv",
+      "oDS2pk",
+      "oDZ1pv",
+      "oDZ1pk",
+      "oDZ2pv",
+      "oDZ2pk",
+      "oPR1linepv",
+      "oPR1linepk",
+      "oPR2linepv",
+      "oPR2linepk",
+      "oPR1Depopv",
+      "oPR1Depopk",
+      "oPR2Depopv",
+      "oPR2Depopk",
+      "oPR1Depozv",
+      "oPR1Depozk",
+      "oPR2Depozv",
+      "oPR2Depozk",
+      "oO1zv",
+      "oO1zk",
+      "oO2zv",
+      "oO2zk",
+      "oDS1zv",
+      "oDS1zk",
+      "oDS2zv",
+      "oDS2zk",
+      "oDZ1zv",
+      "oDZ1zk",
+      "oDZ2zv",
+      "oDZ2zk",
+      "oPR1linezv",
+      "oPR1linezk",
+      "oPR2linezv",
+      "oPR2linezk",
+      "kodPE"
+    ],
+    "sample_data": [
+      {
+        "sost": 1,
+        "opisaniePe": "6метр",
+        "oN4pv": "10",
+        "oN4zv": "10",
+        "oN4pk": "10",
+        "oN4zk": "10",
+        "oO1pv": "10",
+        "oO1pk": "10",
+        "oO2pv": "0",
+        "oO2pk": "10",
+        "oDS1pv": "10",
+        "oDS1pk": "10",
+        "oDS2pv": "0",
+        "oDS2pk": "0",
+        "oDZ1pv": "10",
+        "oDZ1pk": "10",
+        "oDZ2pv": "10",
+        "oDZ2pk": "10",
+        "oPR1linepv": "5",
+        "oPR1linepk": "10",
+        "oPR2linepv": "5",
+        "oPR2linepk": "0",
+        "oPR1Depopv": "10",
+        "oPR1Depopk": "10",
+        "oPR2Depopv": "5",
+        "oPR2Depopk": "0",
+        "oPR1Depozv": "10",
+        "oPR1Depozk": "0",
+        "oPR2Depozv": "10",
+        "oPR2Depozk": "10",
+        "oO1zv": "10",
+        "oO1zk": "10",
+        "oO2zv": "10",
+        "oO2zk": "10",
+        "oDS1zv": "0",
+        "oDS1zk": "10",
+        "oDS2zv": "10",
+        "oDS2zk": "10",
+        "oDZ1zv": "0",
+        "oDZ1zk": "10",
+        "oDZ2zv": "10",
+        "oDZ2zk": "10",
+        "oPR1linezv": "5",
+        "oPR1linezk": "0",
+        "oPR2linezv": "10",
+        "oPR2linezk": "10",
+        "kodPE": "1"
+      },
+      {
+        "sost": 2,
+        "opisaniePe": "8метр",
+        "oN4pv": "10",
+        "oN4zv": "10",
+        "oN4pk": "10",
+        "oN4zk": "10",
+        "oO1pv": "10",
+        "oO1pk": "10",
+        "oO2pv": "0",
+        "oO2pk": "10",
+        "oDS1pv": "10",
+        "oDS1pk": "10",
+        "oDS2pv": "0",
+        "oDS2pk": "0",
+        "oDZ1pv": "10",
+        "oDZ1pk": "10",
+        "oDZ2pv": "10",
+        "oDZ2pk": "10",
+        "oPR1linepv": "5",
+        "oPR1linepk": "10",
+        "oPR2linepv": "5",
+        "oPR2linepk": "0",
+        "oPR1Depopv": "10",
+        "oPR1Depopk": "10",
+        "oPR2Depopv": "5",
+        "oPR2Depopk": "0",
+        "oPR1Depozv": "10",
+        "oPR1Depozk": "0",
+        "oPR2Depozv": "10",
+        "oPR2Depozk": "10",
+        "oO1zv": "10",
+        "oO1zk": "10",
+        "oO2zv": "10",
+        "oO2zk": "10",
+        "oDS1zv": "0",
+        "oDS1zk": "10",
+        "oDS2zv": "10",
+        "oDS2zk": "10",
+        "oDZ1zv": "0",
+        "oDZ1zk": "10",
+        "oDZ2zv": "10",
+        "oDZ2zk": "10",
+        "oPR1linezv": "5",
+        "oPR1linezk": "0",
+        "oPR2linezv": "10",
+        "oPR2linezk": "10",
+        "kodPE": "2"
+      },
+      {
+        "sost": 4,
+        "opisaniePe": "Irisbus",
+        "oN4pv": "10",
+        "oN4zv": "10",
+        "oN4pk": "10",
+        "oN4zk": "10",
+        "oO1pv": "10",
+        "oO1pk": "10",
+        "oO2pv": "0",
+        "oO2pk": "10",
+        "oDS1pv": "10",
+        "oDS1pk": "10",
+        "oDS2pv": "0",
+        "oDS2pk": "0",
+        "oDZ1pv": "10",
+        "oDZ1pk": "10",
+        "oDZ2pv": "10",
+        "oDZ2pk": "10",
+        "oPR1linepv": "5",
+        "oPR1linepk": "10",
+        "oPR2linepv": "5",
+        "oPR2linepk": "0",
+        "oPR1Depopv": "10",
+        "oPR1Depopk": "10",
+        "oPR2Depopv": "5",
+        "oPR2Depopk": "0",
+        "oPR1Depozv": "10",
+        "oPR1Depozk": "0",
+        "oPR2Depozv": "10",
+        "oPR2Depozk": "10",
+        "oO1zv": "10",
+        "oO1zk": "10",
+        "oO2zv": "10",
+        "oO2zk": "10",
+        "oDS1zv": "0",
+        "oDS1zk": "10",
+        "oDS2zv": "10",
+        "oDS2zk": "10",
+        "oDZ1zv": "0",
+        "oDZ1zk": "10",
+        "oDZ2zv": "10",
+        "oDZ2zk": "10",
+        "oPR1linezv": "5",
+        "oPR1linezk": "0",
+        "oPR2linezv": "10",
+        "oPR2linezk": "10",
+        "kodPE": "4"
+      },
+      {
+        "sost": 5,
+        "opisaniePe": "SolarisUrbino15",
+        "oN4pv": "10",
+        "oN4zv": "10",
+        "oN4pk": "10",
+        "oN4zk": "10",
+        "oO1pv": "10",
+        "oO1pk": "10",
+        "oO2pv": "0",
+        "oO2pk": "10",
+        "oDS1pv": "10",
+        "oDS1pk": "10",
+        "oDS2pv": "0",
+        "oDS2pk": "0",
+        "oDZ1pv": "10",
+        "oDZ1pk": "10",
+        "oDZ2pv": "10",
+        "oDZ2pk": "10",
+        "oPR1linepv": "5",
+        "oPR1linepk": "10",
+        "oPR2linepv": "5",
+        "oPR2linepk": "0",
+        "oPR1Depopv": "10",
+        "oPR1Depopk": "10",
+        "oPR2Depopv": "5",
+        "oPR2Depopk": "0",
+        "oPR1Depozv": "10",
+        "oPR1Depozk": "0",
+        "oPR2Depozv": "10",
+        "oPR2Depozk": "10",
+        "oO1zv": "10",
+        "oO1zk": "10",
+        "oO2zv": "10",
+        "oO2zk": "10",
+        "oDS1zv": "0",
+        "oDS1zk": "10",
+        "oDS2zv": "10",
+        "oDS2zk": "10",
+        "oDZ1zv": "0",
+        "oDZ1zk": "10",
+        "oDZ2zv": "10",
+        "oDZ2zk": "10",
+        "oPR1linezv": "5",
+        "oPR1linezk": "0",
+        "oPR2linezv": "10",
+        "oPR2linezk": "10",
+        "kodPE": "5"
+      },
+      {
+        "sost": 6,
+        "opisaniePe": "SolarisUrbino18",
+        "oN4pv": "10",
+        "oN4zv": "10",
+        "oN4pk": "10",
+        "oN4zk": "10",
+        "oO1pv": "10",
+        "oO1pk": "10",
+        "oO2pv": "0",
+        "oO2pk": "10",
+        "oDS1pv": "10",
+        "oDS1pk": "10",
+        "oDS2pv": "0",
+        "oDS2pk": "0",
+        "oDZ1pv": "10",
+        "oDZ1pk": "10",
+        "oDZ2pv": "10",
+        "oDZ2pk": "10",
+        "oPR1linepv": "5",
+        "oPR1linepk": "10",
+        "oPR2linepv": "5",
+        "oPR2linepk": "0",
+        "oPR1Depopv": "10",
+        "oPR1Depopk": "10",
+        "oPR2Depopv": "5",
+        "oPR2Depopk": "0",
+        "oPR1Depozv": "10",
+        "oPR1Depozk": "0",
+        "oPR2Depozv": "10",
+        "oPR2Depozk": "10",
+        "oO1zv": "10",
+        "oO1zk": "10",
+        "oO2zv": "10",
+        "oO2zk": "10",
+        "oDS1zv": "0",
+        "oDS1zk": "10",
+        "oDS2zv": "10",
+        "oDS2zk": "10",
+        "oDZ1zv": "0",
+        "oDZ1zk": "10",
+        "oDZ2zv": "10",
+        "oDZ2zk": "10",
+        "oPR1linezv": "5",
+        "oPR1linezk": "0",
+        "oPR2linezv": "10",
+        "oPR2linezk": "10",
+        "kodPE": "6"
+      }
+    ]
+  },
+  "sprvihodnoy": {
+    "columns": [
+      {
+        "name": "key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "tabn",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tabn1",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "priznak",
+        "type": "varchar(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "datfile",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "datday",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "perenos",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "status",
+        "type": "varchar(1)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 237017,
+    "column_names": [
+      "key",
+      "tabn",
+      "tabn1",
+      "priznak",
+      "datfile",
+      "datday",
+      "perenos",
+      "status"
+    ],
+    "sample_data": [
+      {
+        "key": 49053,
+        "tabn": 5270,
+        "tabn1": 45270,
+        "priznak": "ВЩ",
+        "datfile": "2023-05-01",
+        "datday": "2023-05-01",
+        "perenos": 0,
+        "status": "V"
+      },
+      {
+        "key": 49084,
+        "tabn": 1791,
+        "tabn1": 41791,
+        "priznak": "ВЩ",
+        "datfile": "2023-05-01",
+        "datday": "2023-05-01",
+        "perenos": 0,
+        "status": "V"
+      }
+    ]
+  },
+  "spryro": {
+    "columns": [
+      {
+        "name": "Kniga",
+        "type": "int(11)",
+        "null": false,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "Seria",
+        "type": "varchar(7)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Blank",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "DataInput",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Nn",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      }
+    ],
+    "count": 1,
+    "column_names": [
+      "Kniga",
+      "Seria",
+      "Blank",
+      "DataInput",
+      "Nn"
+    ],
+    "sample_data": [
+      {
+        "Kniga": 0,
+        "Seria": "0",
+        "Blank": 0,
+        "DataInput": "2023-06-16",
+        "Nn": 1
+      }
+    ]
+  },
+  "sprzapravka": {
+    "columns": [
+      {
+        "name": "marshrut",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "vipusk",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "smena",
+        "type": "varchar(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tabvoditel",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "fiovoditel",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "pe№",
+        "type": "int(6)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "putlist№",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "data_day",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "priznak",
+        "type": "varchar(3)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "print",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "del",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "zaprfakt",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "zaprname",
+        "type": "varchar(30)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 94156,
+    "column_names": [
+      "marshrut",
+      "vipusk",
+      "smena",
+      "tabvoditel",
+      "fiovoditel",
+      "pe№",
+      "putlist№",
+      "data_day",
+      "priznak",
+      "print",
+      "key",
+      "del",
+      "zaprfakt",
+      "zaprname"
+    ],
+    "sample_data": [
+      {
+        "marshrut": 68,
+        "vipusk": 2,
+        "smena": "1",
+        "tabvoditel": 5341,
+        "fiovoditel": "Волков Микола Миколайович",
+        "pe№": 1333,
+        "putlist№": "280623-6821",
+        "data_day": "2023-06-28",
+        "priznak": null,
+        "print": 0,
+        "key": 614715,
+        "del": 0,
+        "zaprfakt": 80,
+        "zaprname": "Плехановская 85/87"
+      },
+      {
+        "marshrut": 72,
+        "vipusk": 2,
+        "smena": "1",
+        "tabvoditel": 5036,
+        "fiovoditel": "Цап Микола Михайлович",
+        "pe№": 1253,
+        "putlist№": "280623-7221",
+        "data_day": "2023-06-28",
+        "priznak": null,
+        "print": 0,
+        "key": 614716,
+        "del": 0,
+        "zaprfakt": 80,
+        "zaprname": "Л.Малой 36а"
+      }
+    ]
+  },
+  "tabel": {
+    "columns": [
+      {
+        "name": "key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "status",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "data_mes",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "data_day",
+        "type": "date",
+        "null": true,
+        "key": "MUL",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tab_vod_old",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tab_vod",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "fio_vod",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tabOld",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tab",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "fio_tab",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "marshrut",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "vipusk",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "smena",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tipvipusk",
+        "type": "varchar(2)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "pe№",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "sost",
+        "type": "tinyint(1)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "od1",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "od2",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "od3",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "od4",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "kol_p",
+        "type": "tinyint(2)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "kol_f",
+        "type": "tinyint(2)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "time_fakt_line",
+        "type": "int(10) unsigned",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "time_pr_depo",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "time_pr_line",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "time_pr_vod",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "time_pririvn",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "time_noch",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "time_prazd",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "time_vech",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "time_rez",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "plan_chas",
+        "type": "decimal(6,2)",
+        "null": true,
+        "key": "",
+        "default": "0.00",
+        "extra": ""
+      },
+      {
+        "name": "time_rash",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "pzv",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "bul",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "viruchka",
+        "type": "decimal(9,2)",
+        "null": true,
+        "key": "",
+        "default": "0.00",
+        "extra": ""
+      },
+      {
+        "name": "priznak4smena",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "timevih1",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "timevih2",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "timezah1",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "timezah2",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tobs1",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tobs2",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tpods1",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tpods2",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tzakls1",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tzakls2",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tkots",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tnots",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tvih",
+        "type": "char(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tvihmarsrut",
+        "type": "char(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kpvih",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tzah",
+        "type": "char(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tend",
+        "type": "char(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kpzah",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tob1",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": "00:0",
+        "extra": ""
+      },
+      {
+        "name": "tob2",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": "00:0",
+        "extra": ""
+      },
+      {
+        "name": "putlist№",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "den_nedeli",
+        "type": "varchar(15)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "priznak",
+        "type": "varchar(3)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "mestootst",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tna4otst",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tkonotst",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "data_file",
+        "type": "varchar(20)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "size_file",
+        "type": "varchar(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "print",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tPodgotovkaVod",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tPodgotovkaKon",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tSda4aVod",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tSda4aKon",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tVihdepoVod",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tVihdepoKon",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tZahdepoVod",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tZahdepoKon",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Prim",
+        "type": "varchar(100)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Temp",
+        "type": "varchar(30)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "vid_rab",
+        "type": "varchar(30)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "key_zan",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      }
+    ],
+    "count": 159416,
+    "column_names": [
+      "key",
+      "status",
+      "data_mes",
+      "data_day",
+      "tab_vod_old",
+      "tab_vod",
+      "fio_vod",
+      "tabOld",
+      "tab",
+      "fio_tab",
+      "marshrut",
+      "vipusk",
+      "smena",
+      "tipvipusk",
+      "pe№",
+      "sost",
+      "od1",
+      "od2",
+      "od3",
+      "od4",
+      "kol_p",
+      "kol_f",
+      "time_fakt_line",
+      "time_pr_depo",
+      "time_pr_line",
+      "time_pr_vod",
+      "time_pririvn",
+      "time_noch",
+      "time_prazd",
+      "time_vech",
+      "time_rez",
+      "plan_chas",
+      "time_rash",
+      "pzv",
+      "bul",
+      "viruchka",
+      "priznak4smena",
+      "timevih1",
+      "timevih2",
+      "timezah1",
+      "timezah2",
+      "tobs1",
+      "tobs2",
+      "tpods1",
+      "tpods2",
+      "tzakls1",
+      "tzakls2",
+      "tkots",
+      "tnots",
+      "tvih",
+      "tvihmarsrut",
+      "kpvih",
+      "tzah",
+      "tend",
+      "kpzah",
+      "tob1",
+      "tob2",
+      "putlist№",
+      "den_nedeli",
+      "priznak",
+      "mestootst",
+      "tna4otst",
+      "tkonotst",
+      "data_file",
+      "size_file",
+      "print",
+      "tPodgotovkaVod",
+      "tPodgotovkaKon",
+      "tSda4aVod",
+      "tSda4aKon",
+      "tVihdepoVod",
+      "tVihdepoKon",
+      "tZahdepoVod",
+      "tZahdepoKon",
+      "Prim",
+      "Temp",
+      "vid_rab",
+      "key_zan"
+    ],
+    "sample_data": [
+      {
+        "key": 564284,
+        "status": "Закрыт",
+        "data_mes": "2021-09-01",
+        "data_day": "2021-09-15",
+        "tab_vod_old": 0,
+        "tab_vod": 5017,
+        "fio_vod": "Масалаб Геннадій Іванович",
+        "tabOld": 0,
+        "tab": 5017,
+        "fio_tab": "Масалаб Геннадій Іванович",
+        "marshrut": 272,
+        "vipusk": 2,
+        "smena": 1,
+        "tipvipusk": "ДС",
+        "pe№": 1191,
+        "sost": 1,
+        "od1": 4337,
+        "od2": 4460,
+        "od3": 0,
+        "od4": 0,
+        "kol_p": 9,
+        "kol_f": 1,
+        "time_fakt_line": 28380,
+        "time_pr_depo": 0,
+        "time_pr_line": 0,
+        "time_pr_vod": 0,
+        "time_pririvn": 0,
+        "time_noch": 0,
+        "time_prazd": 0,
+        "time_vech": 0,
+        "time_rez": 0,
+        "plan_chas": "0.00",
+        "time_rash": 0,
+        "pzv": 600,
+        "bul": 0,
+        "viruchka": "0.00",
+        "priznak4smena": 0,
+        "timevih1": 22140,
+        "timevih2": 0,
+        "timezah1": 52860,
+        "timezah2": 0,
+        "tobs1": 1740,
+        "tobs2": 0,
+        "tpods1": 600,
+        "tpods2": 0,
+        "tzakls1": 0,
+        "tzakls2": 0,
+        "tkots": 0,
+        "tnots": 0,
+        "tvih": "06:19",
+        "tvihmarsrut": "06:09",
+        "kpvih": null,
+        "tzah": "14:41",
+        "tend": "14:41",
+        "kpzah": null,
+        "tob1": "00:29",
+        "tob2": "0",
+        "putlist№": "150921-27221",
+        "den_nedeli": "среда",
+        "priznak": null,
+        "mestootst": null,
+        "tna4otst": null,
+        "tkonotst": null,
+        "data_file": null,
+        "size_file": null,
+        "print": 0,
+        "tPodgotovkaVod": "00:10",
+        "tPodgotovkaKon": null,
+        "tSda4aVod": "00:0",
+        "tSda4aKon": null,
+        "tVihdepoVod": "06:09",
+        "tVihdepoKon": null,
+        "tZahdepoVod": "14:41",
+        "tZahdepoKon": null,
+        "Prim": "нет регулярности ",
+        "Temp": null,
+        "vid_rab": "Основное место работы",
+        "key_zan": 0
+      },
+      {
+        "key": 564285,
+        "status": "Закрыт",
+        "data_mes": "2021-09-01",
+        "data_day": "2021-09-15",
+        "tab_vod_old": 0,
+        "tab_vod": 5001,
+        "fio_vod": "Ліщина Віктор Миколайович",
+        "tabOld": 0,
+        "tab": 5001,
+        "fio_tab": "Ліщина Віктор Миколайович",
+        "marshrut": 272,
+        "vipusk": 3,
+        "smena": 1,
+        "tipvipusk": "ДС",
+        "pe№": 1192,
+        "sost": 1,
+        "od1": 4963,
+        "od2": 5081,
+        "od3": 0,
+        "od4": 0,
+        "kol_p": 8,
+        "kol_f": 1,
+        "time_fakt_line": 27060,
+        "time_pr_depo": 0,
+        "time_pr_line": 0,
+        "time_pr_vod": 0,
+        "time_pririvn": 0,
+        "time_noch": 3300,
+        "time_prazd": 0,
+        "time_vech": 0,
+        "time_rez": 0,
+        "plan_chas": "0.00",
+        "time_rash": 0,
+        "pzv": 600,
+        "bul": 0,
+        "viruchka": "0.00",
+        "priznak4smena": 0,
+        "timevih1": 18300,
+        "timevih2": 0,
+        "timezah1": 47580,
+        "timezah2": 0,
+        "tobs1": 1620,
+        "tobs2": 0,
+        "tpods1": 600,
+        "tpods2": 0,
+        "tzakls1": 0,
+        "tzakls2": 0,
+        "tkots": 0,
+        "tnots": 0,
+        "tvih": "05:15",
+        "tvihmarsrut": "05:05",
+        "kpvih": null,
+        "tzah": "13:13",
+        "tend": "13:13",
+        "kpzah": null,
+        "tob1": "00:27",
+        "tob2": "0",
+        "putlist№": "150921-27231",
+        "den_nedeli": "среда",
+        "priznak": null,
+        "mestootst": null,
+        "tna4otst": null,
+        "tkonotst": null,
+        "data_file": null,
+        "size_file": null,
+        "print": 0,
+        "tPodgotovkaVod": "00:10",
+        "tPodgotovkaKon": null,
+        "tSda4aVod": "00:0",
+        "tSda4aKon": null,
+        "tVihdepoVod": "05:05",
+        "tVihdepoKon": null,
+        "tZahdepoVod": "13:13",
+        "tZahdepoKon": null,
+        "Prim": "нет регулярности ",
+        "Temp": null,
+        "vid_rab": "Основное место работы",
+        "key_zan": 0
+      }
+    ]
+  },
+  "tabel_kod_prichina": {
+    "columns": [
+      {
+        "name": "kod",
+        "type": "tinyint(4)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "prichina",
+        "type": "varchar(70)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kod1",
+        "type": "varchar(2)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Nn",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 29,
+    "column_names": [
+      "kod",
+      "prichina",
+      "kod1",
+      "Nn"
+    ],
+    "sample_data": [
+      {
+        "kod": 1,
+        "prichina": "Відпустка щорічна",
+        "kod1": "В",
+        "Nn": 1
+      },
+      {
+        "kod": 2,
+        "prichina": "Непрацездатність, оплачувана тимчасова",
+        "kod1": "ТН",
+        "Nn": 2
+      },
+      {
+        "kod": 3,
+        "prichina": "Непрацездатність неоплачувана, тимчасова",
+        "kod1": "НН",
+        "Nn": null
+      },
+      {
+        "kod": 5,
+        "prichina": "Неявка, передбачена законодавством (Мобілізація)",
+        "kod1": "ІН",
+        "Nn": null
+      },
+      {
+        "kod": 6,
+        "prichina": "Неявка, інші види передбачені колективними договорами, угодами",
+        "kod1": "ІВ",
+        "Nn": null
+      }
+    ]
+  },
+  "tabel_plan": {
+    "columns": [
+      {
+        "name": "key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "status",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "data_day",
+        "type": "date",
+        "null": true,
+        "key": "MUL",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "marshrut",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "vipusk",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "smena",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "plan_chas",
+        "type": "decimal(6,2)",
+        "null": true,
+        "key": "",
+        "default": "0.00",
+        "extra": ""
+      },
+      {
+        "name": "den_nedeli",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 261400,
+    "column_names": [
+      "key",
+      "status",
+      "data_day",
+      "marshrut",
+      "vipusk",
+      "smena",
+      "plan_chas",
+      "den_nedeli"
+    ],
+    "sample_data": [
+      {
+        "key": 969947,
+        "status": "V",
+        "data_day": "2020-09-01",
+        "marshrut": 27,
+        "vipusk": 3,
+        "smena": 2,
+        "plan_chas": "300.00",
+        "den_nedeli": 2
+      },
+      {
+        "key": 969948,
+        "status": "V",
+        "data_day": "2020-09-01",
+        "marshrut": 27,
+        "vipusk": 3,
+        "smena": 4,
+        "plan_chas": "342.00",
+        "den_nedeli": 2
+      }
+    ]
+  },
+  "tabel_plan_norma": {
+    "columns": [
+      {
+        "name": "key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "data",
+        "type": "date",
+        "null": true,
+        "key": "MUL",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tabel",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "podr",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "norma_chas",
+        "type": "decimal(6,2)",
+        "null": true,
+        "key": "",
+        "default": "0.00",
+        "extra": ""
+      },
+      {
+        "name": "norma_day",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "sn_prem",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "sn_vyr",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "sn_sxr",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "sn_vod",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "stat",
+        "type": "varchar(1)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "fakt_chas",
+        "type": "decimal(6,2)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "vid_rab",
+        "type": "varchar(30)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 23397,
+    "column_names": [
+      "key",
+      "data",
+      "tabel",
+      "podr",
+      "norma_chas",
+      "norma_day",
+      "sn_prem",
+      "sn_vyr",
+      "sn_sxr",
+      "sn_vod",
+      "stat",
+      "fakt_chas",
+      "vid_rab"
+    ],
+    "sample_data": [
+      {
+        "key": 927326,
+        "data": "2020-10-01",
+        "tabel": 75,
+        "podr": 0,
+        "norma_chas": "167.00",
+        "norma_day": null,
+        "sn_prem": null,
+        "sn_vyr": null,
+        "sn_sxr": null,
+        "sn_vod": null,
+        "stat": "K",
+        "fakt_chas": null,
+        "vid_rab": null
+      },
+      {
+        "key": 927327,
+        "data": "2020-10-01",
+        "tabel": 127,
+        "podr": 0,
+        "norma_chas": "167.00",
+        "norma_day": null,
+        "sn_prem": null,
+        "sn_vyr": null,
+        "sn_sxr": null,
+        "sn_vod": null,
+        "stat": "K",
+        "fakt_chas": null,
+        "vid_rab": null
+      }
+    ]
+  },
+  "tabel_prichina": {
+    "columns": [
+      {
+        "name": "ndoc",
+        "type": "varchar(30)",
+        "null": false,
+        "key": "PRI",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "datadoc",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "datainput",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tabel",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "status",
+        "type": "varchar(1)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "fio",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "dat1",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "dat2",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kod",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "print",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "kodbol",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "namebol",
+        "type": "varchar(150)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "statuswic",
+        "type": "varchar(1)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 3864,
+    "column_names": [
+      "ndoc",
+      "datadoc",
+      "datainput",
+      "tabel",
+      "status",
+      "fio",
+      "dat1",
+      "dat2",
+      "kod",
+      "print",
+      "key",
+      "kodbol",
+      "namebol",
+      "statuswic"
+    ],
+    "sample_data": [
+      {
+        "ndoc": "АДЯ873338",
+        "datadoc": "2020-12-09",
+        "datainput": "2020-12-21",
+        "tabel": 3564,
+        "status": "K",
+        "fio": "Житеньов Сергій Федорович (осн.)",
+        "dat1": "2020-12-09",
+        "dat2": "2020-12-18",
+        "kod": 2,
+        "print": 0,
+        "key": 26,
+        "kodbol": 0,
+        "namebol": null,
+        "statuswic": null
+      },
+      {
+        "ndoc": "1509",
+        "datadoc": "2020-12-15",
+        "datainput": "2021-01-06",
+        "tabel": 2272,
+        "status": "V",
+        "fio": "Бочарова Оксана Миколаївна (осн.)",
+        "dat1": "2020-12-30",
+        "dat2": "2021-01-05",
+        "kod": 1,
+        "print": 0,
+        "key": 28,
+        "kodbol": 0,
+        "namebol": null,
+        "statuswic": null
+      }
+    ]
+  },
+  "tabel_prostoy": {
+    "columns": [
+      {
+        "name": "Dat",
+        "type": "date",
+        "null": true,
+        "key": "MUL",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "M",
+        "type": "smallint(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "V",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "S",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "PeN",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "TabN",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Stat",
+        "type": "varchar(1)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Prich",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "TineN",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "TimeDl",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      }
+    ],
+    "count": 8753,
+    "column_names": [
+      "Dat",
+      "M",
+      "V",
+      "S",
+      "PeN",
+      "TabN",
+      "Stat",
+      "Prich",
+      "TineN",
+      "TimeDl",
+      "Key"
+    ],
+    "sample_data": [
+      {
+        "Dat": "2023-01-28",
+        "M": 63,
+        "V": 3,
+        "S": 5,
+        "PeN": 1331,
+        "TabN": 5155,
+        "Stat": "D",
+        "Prich": "Заход в депо ремонт",
+        "TineN": "11:22",
+        "TimeDl": "1:14",
+        "Key": 23
+      },
+      {
+        "Dat": "2023-01-28",
+        "M": 72,
+        "V": 1,
+        "S": 5,
+        "PeN": 1330,
+        "TabN": 5324,
+        "Stat": "D",
+        "Prich": "Зад. депо ремонт",
+        "TineN": "5:55",
+        "TimeDl": "0:25",
+        "Key": 24
+      }
+    ]
+  },
+  "topl_kf": {
+    "columns": [
+      {
+        "name": "Kf_Temp",
+        "type": "decimal(5,2)",
+        "null": true,
+        "key": "",
+        "default": "0.00",
+        "extra": ""
+      },
+      {
+        "name": "Kf_Potrebl",
+        "type": "decimal(5,2)",
+        "null": true,
+        "key": "",
+        "default": "0.00",
+        "extra": ""
+      },
+      {
+        "name": "DatFix",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Pe",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "Index",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      }
+    ],
+    "count": 148680,
+    "column_names": [
+      "Kf_Temp",
+      "Kf_Potrebl",
+      "DatFix",
+      "Pe",
+      "Index"
+    ],
+    "sample_data": [
+      {
+        "Kf_Temp": "1.00",
+        "Kf_Potrebl": "1.00",
+        "DatFix": "2023-12-01",
+        "Pe": 0,
+        "Index": 337
+      },
+      {
+        "Kf_Temp": "1.00",
+        "Kf_Potrebl": "1.00",
+        "DatFix": "2023-12-01",
+        "Pe": 1188,
+        "Index": 338
+      }
+    ]
+  },
+  "topl_ost": {
+    "columns": [
+      {
+        "name": "OstTopl",
+        "type": "decimal(8,4)",
+        "null": true,
+        "key": "",
+        "default": "0.0000",
+        "extra": ""
+      },
+      {
+        "name": "DatFix",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Pe",
+        "type": "int(11)",
+        "null": true,
+        "key": "MUL",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "Index",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      }
+    ],
+    "count": 176,
+    "column_names": [
+      "OstTopl",
+      "DatFix",
+      "Pe",
+      "Index"
+    ],
+    "sample_data": [
+      {
+        "OstTopl": "123.1500",
+        "DatFix": "2023-12-01",
+        "Pe": 1188,
+        "Index": 1373
+      },
+      {
+        "OstTopl": "82.2500",
+        "DatFix": "2023-12-01",
+        "Pe": 1189,
+        "Index": 1374
+      }
+    ]
+  },
+  "user": {
+    "columns": [
+      {
+        "name": "fio",
+        "type": "varchar(30)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "name_user",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "pass",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "status",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kod",
+        "type": "smallint(6)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      }
+    ],
+    "count": 4,
+    "column_names": [
+      "fio",
+      "name_user",
+      "pass",
+      "status",
+      "kod"
+    ],
+    "sample_data": [
+      {
+        "fio": "Козюберда С.В.",
+        "name_user": "Kas1",
+        "pass": "123",
+        "status": -1,
+        "kod": 1
+      },
+      {
+        "fio": "Захарчук О.А.",
+        "name_user": "Kas2",
+        "pass": "456",
+        "status": 0,
+        "kod": 2
+      },
+      {
+        "fio": "ОнойкоВ.М.",
+        "name_user": "Kas3",
+        "pass": "789",
+        "status": 0,
+        "kod": 3
+      },
+      {
+        "fio": "Свинар В.И.",
+        "name_user": "Kas4",
+        "pass": "741",
+        "status": 0,
+        "kod": 4
+      }
+    ]
+  },
+  "user_roles": {
+    "columns": [
+      {
+        "name": "id",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "name",
+        "type": "varchar(50)",
+        "null": false,
+        "key": "UNI",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "display_name_uk",
+        "type": "varchar(100)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "display_name_en",
+        "type": "varchar(100)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "is_active",
+        "type": "tinyint(1)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "can_manage_users",
+        "type": "tinyint(1)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "can_manage_vehicles",
+        "type": "tinyint(1)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "can_create_assignments",
+        "type": "tinyint(1)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "can_record_incidents",
+        "type": "tinyint(1)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "can_manage_parking",
+        "type": "tinyint(1)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "can_manage_fuel",
+        "type": "tinyint(1)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "can_view_reports",
+        "type": "tinyint(1)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "can_manage_system",
+        "type": "tinyint(1)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "null": false,
+        "key": "",
+        "default": "CURRENT_TIMESTAMP",
+        "extra": ""
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime",
+        "null": false,
+        "key": "",
+        "default": "CURRENT_TIMESTAMP",
+        "extra": ""
+      }
+    ],
+    "count": 0,
+    "column_names": [
+      "id",
+      "name",
+      "display_name_uk",
+      "display_name_en",
+      "description",
+      "is_active",
+      "can_manage_users",
+      "can_manage_vehicles",
+      "can_create_assignments",
+      "can_record_incidents",
+      "can_manage_parking",
+      "can_manage_fuel",
+      "can_view_reports",
+      "can_manage_system",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "users": {
+    "columns": [
+      {
+        "name": "id",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "username",
+        "type": "varchar(50)",
+        "null": false,
+        "key": "UNI",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "email",
+        "type": "varchar(255)",
+        "null": false,
+        "key": "UNI",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "hashed_password",
+        "type": "varchar(255)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "first_name",
+        "type": "varchar(100)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "last_name",
+        "type": "varchar(100)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "middle_name",
+        "type": "varchar(100)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "phone",
+        "type": "varchar(20)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "role_id",
+        "type": "int(11)",
+        "null": false,
+        "key": "MUL",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "is_active",
+        "type": "tinyint(1)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "is_verified",
+        "type": "tinyint(1)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "last_login",
+        "type": "datetime",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "login_count",
+        "type": "int(11)",
+        "null": false,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "employee_id",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "UNI",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "department",
+        "type": "varchar(100)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "notes",
+        "type": "text",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "created_at",
+        "type": "datetime",
+        "null": false,
+        "key": "",
+        "default": "CURRENT_TIMESTAMP",
+        "extra": ""
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime",
+        "null": false,
+        "key": "",
+        "default": "CURRENT_TIMESTAMP",
+        "extra": ""
+      }
+    ],
+    "count": 0,
+    "column_names": [
+      "id",
+      "username",
+      "email",
+      "hashed_password",
+      "first_name",
+      "last_name",
+      "middle_name",
+      "phone",
+      "role_id",
+      "is_active",
+      "is_verified",
+      "last_login",
+      "login_count",
+      "employee_id",
+      "department",
+      "notes",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "voditelkonduktors36": {
+    "columns": [
+      {
+        "name": "klu4",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "data_file",
+        "type": "varchar(20)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tabvoditel",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tabconduktor",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "priz",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      }
+    ],
+    "count": 0,
+    "column_names": [
+      "klu4",
+      "data_file",
+      "tabvoditel",
+      "tabconduktor",
+      "priz"
+    ]
+  },
+  "zanaradka": {
+    "columns": [
+      {
+        "name": "marshrut",
+        "type": "smallint(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "vipusk",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "smena",
+        "type": "varchar(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tabvoditelZ",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tabvoditel",
+        "type": "int(11)",
+        "null": true,
+        "key": "MUL",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "fiovoditel",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tabinstr",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "fioinstr",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tabconduktorZ",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tabconduktor",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "fioconduktor",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "sost",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "pe№",
+        "type": "int(6)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tvih",
+        "type": "char(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tvihmarsrut",
+        "type": "char(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kpvih",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tzah",
+        "type": "char(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tend",
+        "type": "char(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "kpzah",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tob1",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": "00:00",
+        "extra": ""
+      },
+      {
+        "name": "tob2",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": "00:00",
+        "extra": ""
+      },
+      {
+        "name": "putlist№",
+        "type": "varchar(50)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "den_nedeli",
+        "type": "varchar(15)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "data_day",
+        "type": "date",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "priznak",
+        "type": "varchar(3)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tipvipusk",
+        "type": "varchar(6)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "mestootst",
+        "type": "varchar(10)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tna4otst",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tkonotst",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "data_file",
+        "type": "varchar(20)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "size_file",
+        "type": "varchar(11)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "print",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "tPodgotovkaVod",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tPodgotovkaKon",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tSda4aVod",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tSda4aKon",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tVihdepoVod",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tVihdepoKon",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tZahdepoVod",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "tZahdepoKon",
+        "type": "varchar(5)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "Soobhenie",
+        "type": "varchar(255)",
+        "null": true,
+        "key": "",
+        "default": null,
+        "extra": ""
+      },
+      {
+        "name": "key",
+        "type": "int(11)",
+        "null": false,
+        "key": "PRI",
+        "default": null,
+        "extra": "auto_increment"
+      },
+      {
+        "name": "del",
+        "type": "tinyint(4)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "zaprv",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "zaprFakt",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      },
+      {
+        "name": "ZaprAdr",
+        "type": "varchar(30)",
+        "null": true,
+        "key": "",
+        "default": "-",
+        "extra": ""
+      },
+      {
+        "name": "fl1",
+        "type": "int(11)",
+        "null": true,
+        "key": "",
+        "default": "0",
+        "extra": ""
+      }
+    ],
+    "count": 182494,
+    "column_names": [
+      "marshrut",
+      "vipusk",
+      "smena",
+      "tabvoditelZ",
+      "tabvoditel",
+      "fiovoditel",
+      "tabinstr",
+      "fioinstr",
+      "tabconduktorZ",
+      "tabconduktor",
+      "fioconduktor",
+      "sost",
+      "pe№",
+      "tvih",
+      "tvihmarsrut",
+      "kpvih",
+      "tzah",
+      "tend",
+      "kpzah",
+      "tob1",
+      "tob2",
+      "putlist№",
+      "den_nedeli",
+      "data_day",
+      "priznak",
+      "tipvipusk",
+      "mestootst",
+      "tna4otst",
+      "tkonotst",
+      "data_file",
+      "size_file",
+      "print",
+      "tPodgotovkaVod",
+      "tPodgotovkaKon",
+      "tSda4aVod",
+      "tSda4aKon",
+      "tVihdepoVod",
+      "tVihdepoKon",
+      "tZahdepoVod",
+      "tZahdepoKon",
+      "Soobhenie",
+      "key",
+      "del",
+      "zaprv",
+      "zaprFakt",
+      "ZaprAdr",
+      "fl1"
+    ],
+    "sample_data": [
+      {
+        "marshrut": 17,
+        "vipusk": 1,
+        "smena": "1",
+        "tabvoditelZ": 0,
+        "tabvoditel": 3617,
+        "fiovoditel": "Меркушев Анатолій Олексійович",
+        "tabinstr": 0,
+        "fioinstr": "na",
+        "tabconduktorZ": 0,
+        "tabconduktor": 0,
+        "fioconduktor": null,
+        "sost": 1,
+        "pe№": 662,
+        "tvih": "05:15",
+        "tvihmarsrut": "05:05",
+        "kpvih": "Депо",
+        "tzah": "14:20",
+        "tend": "14:20",
+        "kpzah": " ул.Светла",
+        "tob1": "00:28",
+        "tob2": "00:00",
+        "putlist№": "010921-1711",
+        "den_nedeli": "среда",
+        "data_day": "2021-09-01",
+        "priznak": null,
+        "tipvipusk": "ДС",
+        "mestootst": null,
+        "tna4otst": null,
+        "tkonotst": null,
+        "data_file": "01.09.2021",
+        "size_file": null,
+        "print": 0,
+        "tPodgotovkaVod": "00:10",
+        "tPodgotovkaKon": "00:5",
+        "tSda4aVod": "00:00",
+        "tSda4aKon": "00:5",
+        "tVihdepoVod": "05:05",
+        "tVihdepoKon": "05:10",
+        "tZahdepoVod": "14:20",
+        "tZahdepoKon": "14:25",
+        "Soobhenie": "Парадная форма",
+        "key": 524130,
+        "del": 0,
+        "zaprv": 0,
+        "zaprFakt": 0,
+        "ZaprAdr": "-",
+        "fl1": 0
+      },
+      {
+        "marshrut": 17,
+        "vipusk": 1,
+        "smena": "1",
+        "tabvoditelZ": 0,
+        "tabvoditel": 3617,
+        "fiovoditel": "Меркушев Анатолій Олексійович",
+        "tabinstr": 0,
+        "fioinstr": "na",
+        "tabconduktorZ": 0,
+        "tabconduktor": 0,
+        "fioconduktor": null,
+        "sost": 1,
+        "pe№": 1200,
+        "tvih": "05:50",
+        "tvihmarsrut": "05:40",
+        "kpvih": "Депо",
+        "tzah": "13:34",
+        "tend": "13:34",
+        "kpzah": "Бол.скорой",
+        "tob1": "00:28",
+        "tob2": "00:00",
+        "putlist№": "140921-1711",
+        "den_nedeli": "вторник",
+        "data_day": "2021-09-14",
+        "priznak": null,
+        "tipvipusk": "ДС",
+        "mestootst": null,
+        "tna4otst": null,
+        "tkonotst": null,
+        "data_file": "01.09.2021",
+        "size_file": null,
+        "print": 0,
+        "tPodgotovkaVod": "00:10",
+        "tPodgotovkaKon": "00:5",
+        "tSda4aVod": "00:00",
+        "tSda4aKon": "00:5",
+        "tVihdepoVod": "05:40",
+        "tVihdepoKon": "05:45",
+        "tZahdepoVod": "13:34",
+        "tZahdepoKon": "13:39",
+        "Soobhenie": null,
+        "key": 524195,
+        "del": 0,
+        "zaprv": 0,
+        "zaprFakt": 0,
+        "ZaprAdr": "-",
+        "fl1": 0
+      }
+    ]
+  }
+}

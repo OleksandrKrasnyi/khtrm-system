@@ -1,6 +1,6 @@
 <template>
   <div class="reports-view">
-    <h1><i class="fas fa-chart-bar"></i> Звіти та аналітика</h1>
+    <h1><i class="fas fa-chart-bar" /> Звіти та аналітика</h1>
     <p>Тут будуть звіти та аналітика по роботі системи</p>
   </div>
 </template>

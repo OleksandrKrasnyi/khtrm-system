@@ -1,6 +1,6 @@
 <template>
   <div class="fuel-management">
-    <h1><i class="fas fa-gas-pump"></i> Управління пальним</h1>
+    <h1><i class="fas fa-gas-pump" /> Управління пальним</h1>
     <p>Тут буде облік та управління витратами палива</p>
   </div>
 </template>

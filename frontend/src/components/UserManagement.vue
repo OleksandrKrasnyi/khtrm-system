@@ -1,6 +1,6 @@
 <template>
   <div class="user-management">
-    <h1><i class="fas fa-users-cog"></i> Управління користувачами</h1>
+    <h1><i class="fas fa-users-cog" /> Управління користувачами</h1>
     <p>Тут буде управління користувачами та ролями</p>
   </div>
 </template>

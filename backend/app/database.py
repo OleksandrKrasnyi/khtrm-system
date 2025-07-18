@@ -1,7 +1,9 @@
 """Database configuration and connection setup."""
 
+from collections.abc import Generator
+
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import Session, sessionmaker
 
 from .config import settings
 from .models.base import Base
@@ -11,9 +13,9 @@ engine = create_engine(
     settings.effective_database_url,
     echo=settings.database_echo,
     pool_pre_ping=True,
-    # SQLite specific settings
-    connect_args={"check_same_thread": False}
-    if "sqlite" in settings.effective_database_url
+    # MySQL connection settings
+    connect_args={"charset": "utf8mb4"}
+    if "mysql" in settings.effective_database_url
     else {},
 )
 
@@ -25,13 +27,13 @@ SessionLocal = sessionmaker(
 )
 
 
-async def create_tables():
+async def create_tables() -> None:
     """Create database tables."""
     Base.metadata.create_all(bind=engine)
     print("📊 Database tables created successfully")
 
 
-def get_db():
+def get_db() -> Generator[Session, None, None]:
     """Get database session dependency."""
     db = SessionLocal()
     try:
@@ -41,17 +43,17 @@ def get_db():
 
 
 # Database utility functions
-def init_db():
+def init_db() -> None:
     """Initialize database with tables."""
     Base.metadata.create_all(bind=engine)
 
 
-def drop_db():
+def drop_db() -> None:
     """Drop all database tables."""
     Base.metadata.drop_all(bind=engine)
 
 
-def reset_db():
+def reset_db() -> None:
     """Reset database (drop and recreate tables)."""
     drop_db()
     init_db()

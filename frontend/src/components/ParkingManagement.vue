@@ -1,6 +1,6 @@
 <template>
   <div class="parking-management">
-    <h1><i class="fas fa-parking"></i> Управління стоянкою</h1>
+    <h1><i class="fas fa-parking" /> Управління стоянкою</h1>
     <p>Тут буде управління парковкою транспорту</p>
   </div>
 </template>

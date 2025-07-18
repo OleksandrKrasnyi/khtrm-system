@@ -1,6 +1,13 @@
-"""Database models for KHTRM System."""
+"""
+Models package initialization
+"""
 
+from .assignment import Assignment
 from .base import Base
-from .user import User, UserRole
+from .employee import Employee
+from .route import Route
+from .user import User
+from .vehicle import Vehicle
 
-__all__ = ["Base", "User", "UserRole"]
+# Export all models for easier imports
+__all__ = ["Base", "User", "Assignment", "Route", "Employee", "Vehicle"]

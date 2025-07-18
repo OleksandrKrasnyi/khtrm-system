@@ -3,7 +3,7 @@
 from collections.abc import AsyncGenerator
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -50,7 +50,7 @@ def create_app() -> FastAPI:
 
     # Exception handlers
     @app.exception_handler(StarletteHTTPException)
-    async def http_exception_handler(request, exc):
+    async def http_exception_handler(request: Request, exc: StarletteHTTPException) -> JSONResponse:
         """Handle HTTP exceptions."""
         return JSONResponse(
             status_code=exc.status_code,
@@ -62,7 +62,7 @@ def create_app() -> FastAPI:
         )
 
     @app.exception_handler(RequestValidationError)
-    async def validation_exception_handler(request, exc):
+    async def validation_exception_handler(request: Request, exc: RequestValidationError) -> JSONResponse:
         """Handle validation errors with Ukrainian messages."""
         errors = []
         for error in exc.errors():
@@ -101,7 +101,7 @@ def create_app() -> FastAPI:
 
     # Health check endpoint
     @app.get("/health")
-    async def health_check():
+    async def health_check() -> dict[str, str]:
         """Health check endpoint."""
         return {
             "status": "healthy",
@@ -112,7 +112,7 @@ def create_app() -> FastAPI:
 
     # Root endpoint
     @app.get("/")
-    async def read_root():
+    async def read_root() -> dict[str, str]:
         """Root endpoint."""
         return {
             "message": "Ласкаво просимо до KHTRM System",
@@ -127,6 +127,11 @@ def create_app() -> FastAPI:
     # app.include_router(auth.router, prefix="/api/v1/auth", tags=["authentication"])
     # app.include_router(users.router, prefix="/api/v1/users", tags=["users"])
     # app.include_router(vehicles.router, prefix="/api/v1/vehicles", tags=["vehicles"])
+
+    # Dispatcher routes
+    from .routers import dispatcher
+
+    app.include_router(dispatcher.router, prefix="/api/dispatcher", tags=["dispatcher"])
 
     return app
 

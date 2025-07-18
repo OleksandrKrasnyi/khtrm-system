@@ -1,6 +1,7 @@
 """User schemas for KHTRM System."""
 
 from datetime import datetime
+from typing import Any
 
 from pydantic import BaseModel, EmailStr, Field, validator
 
@@ -85,7 +86,7 @@ class UserBase(BaseModel):
         None, min_length=2, max_length=100, description="Middle name (patronymic)"
     )
     phone: str | None = Field(
-        None, regex=r"^\+?[\d\s\-\(\)]{7,20}$", description="Phone number"
+        None, pattern=r"^\+?[\d\s\-\(\)]{7,20}$", description="Phone number"
     )
     employee_id: str | None = Field(
         None, min_length=1, max_length=50, description="Employee ID number"
@@ -96,7 +97,7 @@ class UserBase(BaseModel):
     notes: str | None = Field(None, description="Additional notes about user")
 
     @validator("username")
-    def validate_username(cls, v):
+    def validate_username(cls, v: str) -> str:
         """Validate username format."""
         if not v.replace("_", "").replace("-", "").isalnum():
             raise ValueError(
@@ -105,7 +106,7 @@ class UserBase(BaseModel):
         return v.lower()
 
     @validator("phone")
-    def validate_phone(cls, v):
+    def validate_phone(cls, v: str | None) -> str | None:
         """Validate phone number format."""
         if v is not None:
             # Remove all non-digit characters except +
@@ -117,7 +118,7 @@ class UserBase(BaseModel):
         return v
 
     @validator("first_name", "last_name", "middle_name")
-    def validate_names(cls, v):
+    def validate_names(cls, v: str | None) -> str | None:
         """Validate name fields."""
         if v is not None:
             if not v.replace(" ", "").replace("-", "").replace("'", "").isalpha():
@@ -138,7 +139,7 @@ class UserCreate(UserBase):
     is_verified: bool = Field(False, description="Whether user email is verified")
 
     @validator("password")
-    def validate_password(cls, v):
+    def validate_password(cls, v: str) -> str:
         """Validate password strength."""
         if len(v) < 8:
             raise ValueError("Пароль має містити принаймні 8 символів")
@@ -162,7 +163,7 @@ class UserUpdate(BaseModel):
     first_name: str | None = Field(None, min_length=2, max_length=100)
     last_name: str | None = Field(None, min_length=2, max_length=100)
     middle_name: str | None = Field(None, min_length=2, max_length=100)
-    phone: str | None = Field(None, regex=r"^\+?[\d\s\-\(\)]{7,20}$")
+    phone: str | None = Field(None, pattern=r"^\+?[\d\s\-\(\)]{7,20}$")
     employee_id: str | None = Field(None, min_length=1, max_length=50)
     department: str | None = Field(None, min_length=2, max_length=100)
     notes: str | None = None
@@ -171,7 +172,7 @@ class UserUpdate(BaseModel):
     is_verified: bool | None = None
 
     @validator("phone")
-    def validate_phone(cls, v):
+    def validate_phone(cls, v: str | None) -> str | None:
         """Validate phone number format."""
         if v is not None:
             cleaned = "".join(c for c in v if c.isdigit() or c == "+")
@@ -182,7 +183,7 @@ class UserUpdate(BaseModel):
         return v
 
     @validator("first_name", "last_name", "middle_name")
-    def validate_names(cls, v):
+    def validate_names(cls, v: str | None) -> str | None:
         """Validate name fields."""
         if v is not None:
             if not v.replace(" ", "").replace("-", "").replace("'", "").isalpha():
@@ -220,7 +221,7 @@ class LoginRequest(BaseModel):
     password: str = Field(..., min_length=1, max_length=100, description="Password")
 
     @validator("username")
-    def validate_username(cls, v):
+    def validate_username(cls, v: str) -> str:
         """Validate username format."""
         return v.lower().strip()
 
@@ -255,14 +256,14 @@ class PasswordChangeRequest(BaseModel):
     )
 
     @validator("confirm_password")
-    def validate_password_match(cls, v, values):
+    def validate_password_match(cls, v: str, values: dict[str, Any]) -> str:
         """Validate that passwords match."""
         if "new_password" in values and v != values["new_password"]:
             raise ValueError("Паролі не співпадають")
         return v
 
     @validator("new_password")
-    def validate_new_password(cls, v):
+    def validate_new_password(cls, v: str) -> str:
         """Validate password strength."""
         if len(v) < 8:
             raise ValueError("Пароль має містити принаймні 8 символів")

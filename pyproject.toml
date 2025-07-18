@@ -14,48 +14,22 @@ authors = [
 ]
 keywords = ["khtrm", "transport", "fleet", "management", "fastapi", "vue"]
 dependencies = [
-    "aiosqlite>=0.21.0",
-    "alembic>=1.16.2",
-    "cryptography>=45.0.5",
     "fastapi>=0.116.0",
-    "httpx>=0.28.1",
-    "passlib>=1.7.4",
+    "uvicorn[standard]>=0.35.0",
+    "sqlalchemy>=2.0.41",
+    "alembic>=1.16.2",
     "pydantic>=2.11.7",
     "pydantic-settings>=2.10.1",
-    "pymysql>=1.1.1",
-    "python-dotenv>=1.1.1",
-    "python-jose>=3.5.0",
-    "python-multipart>=0.0.20",
-    "sqlalchemy>=2.0.41",
-    "uvicorn>=0.35.0",
-]
-
-[tool.hatch.build.targets.wheel]
-packages = ["backend"]
-classifiers = [
-    "Development Status :: 3 - Alpha",
-    "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-]
-
-dependencies = [
-    "fastapi>=0.104.1",
-    "uvicorn[standard]>=0.24.0",
-    "sqlalchemy>=2.0.23",
-    "alembic>=1.12.1",
-    "pydantic>=2.5.0",
-    "pydantic-settings>=2.1.0",
-    "python-jose[cryptography]>=3.3.0",
+    "python-jose[cryptography]>=3.5.0",
     "passlib[bcrypt]>=1.7.4",
-    "python-multipart>=0.0.6",
-    "pymysql>=1.1.0",
-    "cryptography>=41.0.7",
-    "python-dotenv>=1.0.0",
-    "aiosqlite>=0.19.0",
-    "httpx>=0.25.2",
+    "python-multipart>=0.0.20",
+    "pymysql>=1.1.1",
+    "cryptography>=45.0.5",
+    "python-dotenv>=1.1.1",
+    "aiosqlite>=0.21.0",
+    "httpx>=0.28.1",
+    "paramiko>=3.5.1",
+    "mysql-connector-python>=9.3.0",
 ]
 
 [project.optional-dependencies]
@@ -74,6 +48,9 @@ Homepage = "https://github.com/khtrm-system/khtrm-system"
 Repository = "https://github.com/khtrm-system/khtrm-system.git"
 Documentation = "https://khtrm-system.readthedocs.io"
 "Bug Tracker" = "https://github.com/khtrm-system/khtrm-system/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["backend"]
 
 [tool.ruff]
 target-version = "py311"

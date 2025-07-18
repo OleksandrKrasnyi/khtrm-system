@@ -238,6 +238,8 @@ desktop.ini
 .env.development.local
 .env.test.local
 .env.production.local
+env.txt
+backend/env.txt
 
 # Local development files
 local_settings.py
